@@ -17,11 +17,12 @@ class LaunchesRouter {
     init(delegate: LaunchesRouterDelegate) {
         self.delegate = delegate
     }
-    
+
     func rootController() -> UIViewController {
-        let controller = UIViewController()
-        controller.view.backgroundColor = UIColor.red
-        return controller 
+        let controller = LaunchesTableViewController()
+        let interactor = LaunchesInteractorImplementation()
+        controller.presenter = LaunchesPresenterImplementation(interactor: interactor)
+        return UINavigationController(rootViewController: controller)
     }
     
 }

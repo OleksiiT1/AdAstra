@@ -24,6 +24,13 @@
 		D96719D92264FE78007563BE /* LaunchesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719D82264FE78007563BE /* LaunchesRouter.swift */; };
 		D96719DB2264FEA7007563BE /* LaunchesRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719DA2264FEA7007563BE /* LaunchesRouterDelegate.swift */; };
 		D96719DD22650028007563BE /* RootRouter+Launches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719DC22650028007563BE /* RootRouter+Launches.swift */; };
+		D96719DF226504BF007563BE /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719DE226504BF007563BE /* LaunchesTableViewController.swift */; };
+		D96719E12265051F007563BE /* LaunchesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719E02265051F007563BE /* LaunchesPresenter.swift */; };
+		D96719E322650630007563BE /* LaunchesInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719E222650630007563BE /* LaunchesInteractorImplementation.swift */; };
+		D96719E8226508E3007563BE /* LaunchesDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719E7226508E3007563BE /* LaunchesDataService.swift */; };
+		D96719EA22650945007563BE /* Launches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719E922650945007563BE /* Launches.swift */; };
+		D96719EC22650A02007563BE /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719EB22650A02007563BE /* Launch.swift */; };
+		D96719EE22650AC2007563BE /* CommonDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719ED22650AC2007563BE /* CommonDataService.swift */; };
 		FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCB2C7CA1F57127800481080 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +73,13 @@
 		D96719D82264FE78007563BE /* LaunchesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRouter.swift; sourceTree = "<group>"; };
 		D96719DA2264FEA7007563BE /* LaunchesRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRouterDelegate.swift; sourceTree = "<group>"; };
 		D96719DC22650028007563BE /* RootRouter+Launches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootRouter+Launches.swift"; sourceTree = "<group>"; };
+		D96719DE226504BF007563BE /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
+		D96719E02265051F007563BE /* LaunchesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPresenter.swift; sourceTree = "<group>"; };
+		D96719E222650630007563BE /* LaunchesInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesInteractorImplementation.swift; sourceTree = "<group>"; };
+		D96719E7226508E3007563BE /* LaunchesDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDataService.swift; sourceTree = "<group>"; };
+		D96719E922650945007563BE /* Launches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launches.swift; sourceTree = "<group>"; };
+		D96719EB22650A02007563BE /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		D96719ED22650AC2007563BE /* CommonDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataService.swift; sourceTree = "<group>"; };
 		FCB2C7CA1F57127800481080 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +153,7 @@
 				2AFB31021F3853C6009C4586 /* Resources */,
 				2AFB31071F38542E009C4586 /* SupportingFiles */,
 				2AB31D9E1F38740A00B7D1F3 /* Models */,
+				D96719E42265088C007563BE /* DataServices */,
 				2AB31D9F1F38741400B7D1F3 /* Modules */,
 				2AFB310A1F385A20009C4586 /* Helpers */,
 			);
@@ -158,6 +173,8 @@
 		2AB31D9E1F38740A00B7D1F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D96719E922650945007563BE /* Launches.swift */,
+				D96719EB22650A02007563BE /* Launch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,8 +289,21 @@
 			isa = PBXGroup;
 			children = (
 				D96719D82264FE78007563BE /* LaunchesRouter.swift */,
+				D96719DE226504BF007563BE /* LaunchesTableViewController.swift */,
+				D96719E02265051F007563BE /* LaunchesPresenter.swift */,
+				D96719E222650630007563BE /* LaunchesInteractorImplementation.swift */,
 			);
 			path = Launches;
+			sourceTree = "<group>";
+		};
+		D96719E42265088C007563BE /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				D96719E7226508E3007563BE /* LaunchesDataService.swift */,
+				D96719ED22650AC2007563BE /* CommonDataService.swift */,
+			);
+			name = DataServices;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,15 +515,22 @@
 			files = (
 				2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */,
 				2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */,
+				D96719DF226504BF007563BE /* LaunchesTableViewController.swift in Sources */,
 				D96719DD22650028007563BE /* RootRouter+Launches.swift in Sources */,
 				C90395241FC622D2006F1DC0 /* main.swift in Sources */,
+				D96719E322650630007563BE /* LaunchesInteractorImplementation.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
 				D96719DB2264FEA7007563BE /* LaunchesRouterDelegate.swift in Sources */,
 				553FC23C214047CB001D9362 /* R.generated.swift in Sources */,
 				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
+				D96719EC22650A02007563BE /* Launch.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsHandler.swift in Sources */,
+				D96719EE22650AC2007563BE /* CommonDataService.swift in Sources */,
 				D96719D92264FE78007563BE /* LaunchesRouter.swift in Sources */,
+				D96719EA22650945007563BE /* Launches.swift in Sources */,
+				D96719E12265051F007563BE /* LaunchesPresenter.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkHandler.swift in Sources */,
+				D96719E8226508E3007563BE /* LaunchesDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

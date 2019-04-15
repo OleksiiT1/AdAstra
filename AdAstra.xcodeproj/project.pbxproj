@@ -15,10 +15,15 @@
 		2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9222811F38797600A648E6 /* ConfigurationManager.swift */; };
 		2ABEE6D41F38856A00531205 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ABEE6D31F38828A00531205 /* Configuration.plist */; };
 		2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEE6D51F3886D700531205 /* RootRouter.swift */; };
+		49A2AE7EC54364B19D0A1B08 /* Pods_AdAstra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF227E76BBEF7D0CAD303AE3 /* Pods_AdAstra.framework */; };
 		553FC23C214047CB001D9362 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553FC23B214047CB001D9362 /* R.generated.swift */; };
+		A6E0E0A6F866A2B6721492A5 /* Pods_AdAstraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B4FEDDC7E033E9B6343767 /* Pods_AdAstraTests.framework */; };
 		C90395241FC622D2006F1DC0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395231FC622D2006F1DC0 /* main.swift */; };
 		C90395261FC62399006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
 		C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */; };
+		D96719D92264FE78007563BE /* LaunchesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719D82264FE78007563BE /* LaunchesRouter.swift */; };
+		D96719DB2264FEA7007563BE /* LaunchesRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719DA2264FEA7007563BE /* LaunchesRouterDelegate.swift */; };
+		D96719DD22650028007563BE /* RootRouter+Launches.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96719DC22650028007563BE /* RootRouter+Launches.swift */; };
 		FCB2C7CB1F57127800481080 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCB2C7CA1F57127800481080 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -28,28 +33,39 @@
 			containerPortal = 2A1E772B1F384BFC006C84D4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2A1E77321F384BFC006C84D4;
-			remoteInfo = "AdAstra";
+			remoteInfo = AdAstra;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01A437CBFABFF5774461FCA0 /* Pods-AdAstra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdAstra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdAstra/Pods-AdAstra.debug.xcconfig"; sourceTree = "<group>"; };
 		2A1DD4DE1F389C2200712195 /* DeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkHandler.swift; sourceTree = "<group>"; };
 		2A1DD4E01F389E2100712195 /* NotificationsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsHandler.swift; sourceTree = "<group>"; };
-		2A1E77331F384BFC006C84D4 /* AdAstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdAstra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1E77331F384BFC006C84D4 /* AdAstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdAstra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1E77361F384BFC006C84D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A1E773D1F384BFD006C84D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A1E77401F384BFD006C84D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A1E77421F384BFD006C84D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A1E77471F384BFD006C84D4 /* AdAstraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdAstraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1E77471F384BFD006C84D4 /* AdAstraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdAstraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A1E774D1F384BFD006C84D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A9222811F38797600A648E6 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
 		2A9222841F387B1D00A648E6 /* AdAstraTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdAstraTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		2ABEE6D31F38828A00531205 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		2ABEE6D51F3886D700531205 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		2E1EB9DC7172ED62EBE6EBE1 /* Pods-AdAstra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdAstra.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdAstra/Pods-AdAstra.release.xcconfig"; sourceTree = "<group>"; };
+		35B4FEDDC7E033E9B6343767 /* Pods_AdAstraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdAstraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35ED811E1243AEF0C986F821 /* Pods-AdAstraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdAstraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdAstraTests/Pods-AdAstraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		381E165001F1DFB8C62FA5A1 /* Pods-AdAstraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdAstraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdAstraTests/Pods-AdAstraTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DE257C7B3AD004165A3B1A5 /* Pods-AdAstra.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdAstra.staging.xcconfig"; path = "Pods/Target Support Files/Pods-AdAstra/Pods-AdAstra.staging.xcconfig"; sourceTree = "<group>"; };
 		553FC23B214047CB001D9362 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		55F50BE321404BDD00FAC039 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		6141106D23652531A4EB77FA /* Pods-AdAstraTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdAstraTests.staging.xcconfig"; path = "Pods/Target Support Files/Pods-AdAstraTests/Pods-AdAstraTests.staging.xcconfig"; sourceTree = "<group>"; };
+		AF227E76BBEF7D0CAD303AE3 /* Pods_AdAstra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdAstra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90395231FC622D2006F1DC0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsAppDelegate.swift; sourceTree = "<group>"; };
+		D96719D82264FE78007563BE /* LaunchesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRouter.swift; sourceTree = "<group>"; };
+		D96719DA2264FEA7007563BE /* LaunchesRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRouterDelegate.swift; sourceTree = "<group>"; };
+		D96719DC22650028007563BE /* RootRouter+Launches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootRouter+Launches.swift"; sourceTree = "<group>"; };
 		FCB2C7CA1F57127800481080 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A2AE7EC54364B19D0A1B08 /* Pods_AdAstra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E0E0A6F866A2B6721492A5 /* Pods_AdAstraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1782E5A5CCF57900713DC5F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01A437CBFABFF5774461FCA0 /* Pods-AdAstra.debug.xcconfig */,
+				4DE257C7B3AD004165A3B1A5 /* Pods-AdAstra.staging.xcconfig */,
+				2E1EB9DC7172ED62EBE6EBE1 /* Pods-AdAstra.release.xcconfig */,
+				35ED811E1243AEF0C986F821 /* Pods-AdAstraTests.debug.xcconfig */,
+				6141106D23652531A4EB77FA /* Pods-AdAstraTests.staging.xcconfig */,
+				381E165001F1DFB8C62FA5A1 /* Pods-AdAstraTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2A1DD4E21F38A09700712195 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +117,8 @@
 				2A1E77351F384BFC006C84D4 /* AdAstra */,
 				2A1E774A1F384BFD006C84D4 /* AdAstraTests */,
 				2A1E77341F384BFC006C84D4 /* Products */,
+				1782E5A5CCF57900713DC5F1 /* Pods */,
+				7A25389D4BB3A6377608D3DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,7 +142,7 @@
 				2AB31D9F1F38741400B7D1F3 /* Modules */,
 				2AFB310A1F385A20009C4586 /* Helpers */,
 			);
-			path = "AdAstra";
+			path = AdAstra;
 			sourceTree = "<group>";
 		};
 		2A1E774A1F384BFD006C84D4 /* AdAstraTests */ = {
@@ -119,7 +152,7 @@
 				2A1E774D1F384BFD006C84D4 /* Info.plist */,
 				C90395251FC62399006F1DC0 /* TestsAppDelegate.swift */,
 			);
-			path = "AdAstraTests";
+			path = AdAstraTests;
 			sourceTree = "<group>";
 		};
 		2AB31D9E1F38740A00B7D1F3 /* Models */ = {
@@ -132,6 +165,7 @@
 		2AB31D9F1F38741400B7D1F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D96719D72264FDCB007563BE /* Launches */,
 				2A1DD4E21F38A09700712195 /* Launch */,
 			);
 			path = Modules;
@@ -155,6 +189,7 @@
 		2AB31DA21F38744600B7D1F3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				D96719DA2264FEA7007563BE /* LaunchesRouterDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -173,6 +208,7 @@
 		2AB31DA41F38745300B7D1F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D96719DC22650028007563BE /* RootRouter+Launches.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,6 +259,23 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		7A25389D4BB3A6377608D3DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF227E76BBEF7D0CAD303AE3 /* Pods_AdAstra.framework */,
+				35B4FEDDC7E033E9B6343767 /* Pods_AdAstraTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96719D72264FDCB007563BE /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				D96719D82264FE78007563BE /* LaunchesRouter.swift */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,18 +283,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A1E77501F384BFD006C84D4 /* Build configuration list for PBXNativeTarget "AdAstra" */;
 			buildPhases = (
+				2F6982A13456F2FD88EBBB2E /* [CP] Check Pods Manifest.lock */,
 				553FC23A2140470C001D9362 /* R.swift */,
 				2A1E772F1F384BFC006C84D4 /* Sources */,
 				FC9CA61F1F83C1B700B8EB94 /* SwiftLint */,
 				2A1E77301F384BFC006C84D4 /* Frameworks */,
 				2A1E77311F384BFC006C84D4 /* Resources */,
+				4C627E5B66B5DCE671974201 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "AdAstra";
-			productName = "AdAstra";
+			name = AdAstra;
+			productName = AdAstra;
 			productReference = 2A1E77331F384BFC006C84D4 /* AdAstra.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -249,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A1E77531F384BFD006C84D4 /* Build configuration list for PBXNativeTarget "AdAstraTests" */;
 			buildPhases = (
+				981169C1E58BC3123A299AC2 /* [CP] Check Pods Manifest.lock */,
 				2A1E77431F384BFD006C84D4 /* Sources */,
 				2A1E77441F384BFD006C84D4 /* Frameworks */,
 				2A1E77451F384BFD006C84D4 /* Resources */,
@@ -258,8 +314,8 @@
 			dependencies = (
 				2A1E77491F384BFD006C84D4 /* PBXTargetDependency */,
 			);
-			name = "AdAstraTests";
-			productName = "AdAstraTests";
+			name = AdAstraTests;
+			productName = AdAstraTests;
 			productReference = 2A1E77471F384BFD006C84D4 /* AdAstraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -271,7 +327,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "ovt";
+				ORGANIZATIONNAME = ovt;
 				TargetAttributes = {
 					2A1E77321F384BFC006C84D4 = {
 						CreatedOnToolsVersion = 9.0;
@@ -324,6 +380,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2F6982A13456F2FD88EBBB2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdAstra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C627E5B66B5DCE671974201 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AdAstra/Pods-AdAstra-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AdAstra/Pods-AdAstra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		553FC23A2140470C001D9362 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,11 +434,33 @@
 			);
 			name = R.swift;
 			outputPaths = (
-				"$SRCROOT/AdAstra/Resources/Generated/R.generated.swift",
+				$SRCROOT/AdAstra/Resources/Generated/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/AdAstra/Resources/Generated/R.generated.swift\"\n";
+		};
+		981169C1E58BC3123A299AC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdAstraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FC9CA61F1F83C1B700B8EB94 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -363,11 +485,14 @@
 			files = (
 				2A9222821F38797600A648E6 /* ConfigurationManager.swift in Sources */,
 				2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */,
+				D96719DD22650028007563BE /* RootRouter+Launches.swift in Sources */,
 				C90395241FC622D2006F1DC0 /* main.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
+				D96719DB2264FEA7007563BE /* LaunchesRouterDelegate.swift in Sources */,
 				553FC23C214047CB001D9362 /* R.generated.swift in Sources */,
 				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsHandler.swift in Sources */,
+				D96719D92264FE78007563BE /* LaunchesRouter.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +583,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -510,48 +635,51 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		2A1E77511F384BFD006C84D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A437CBFABFF5774461FCA0 /* Pods-AdAstra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "AdAstra/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = AdAstra/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -warn-long-expression-type-checking=500";
 				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		2A1E77521F384BFD006C84D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1EB9DC7172ED62EBE6EBE1 /* Pods-AdAstra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "AdAstra/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = AdAstra/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		2A1E77541F384BFD006C84D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35ED811E1243AEF0C986F821 /* Pods-AdAstraTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "AdAstraTests/Info.plist";
+				INFOPLIST_FILE = AdAstraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -565,11 +693,12 @@
 		};
 		2A1E77551F384BFD006C84D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381E165001F1DFB8C62FA5A1 /* Pods-AdAstraTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "AdAstraTests/Info.plist";
+				INFOPLIST_FILE = AdAstraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,32 +765,34 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Staging;
 		};
 		2ABEE6D01F387C5D00531205 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE257C7B3AD004165A3B1A5 /* Pods-AdAstra.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "AdAstra/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = AdAstra/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Staging;
 		};
 		2ABEE6D11F387C5D00531205 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6141106D23652531A4EB77FA /* Pods-AdAstraTests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "AdAstraTests/Info.plist";
+				INFOPLIST_FILE = AdAstraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";

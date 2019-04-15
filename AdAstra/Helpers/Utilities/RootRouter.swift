@@ -9,6 +9,9 @@ import UIKit
 
 class RootRouter {
 
+    private lazy var  launchesRouter: LaunchesRouter = { return LaunchesRouter(delegate: self) }()
+    
+    
     /** Replaces root view controller. You can specify the replacment animation type.
      If no animation type is specified, there is no animation */
     func setRootViewController(controller: UIViewController, animatedWithOptions: UIView.AnimationOptions?) {
@@ -26,8 +29,9 @@ class RootRouter {
 
     func loadMainAppStructure() {
         // Customize your app structure here
-        let controller = UIViewController()
-        controller.view.backgroundColor = UIColor.red
+        let controller = UITabBarController()
+        controller.setViewControllers([launchesRouter.rootController()], animated: true)
+
         setRootViewController(controller: controller, animatedWithOptions: nil)
     }
 }

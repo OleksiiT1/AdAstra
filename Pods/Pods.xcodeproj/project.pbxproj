@@ -1,0 +1,1091 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084DA7A19427D05934BC7CD443AA6742 /* R.swift.Library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B73863DE426866FE423A895DE0432C91 /* R.swift.Library-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1379D0F0199D540753AAD83E354D6B38 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2490D22FD23D572EF0B587AE980A2877 /* UICollectionView+ReuseIdentifierProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		13877F534C56935DDC4EB12E0F9C2A6B /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95A675AB45CBEE54180CF2A676144B /* Identifier.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C0535559164A36910266BF84FE1B8B7 /* UIStoryboard+StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0A9B82AE82FE2C034B051424BF592 /* UIStoryboard+StoryboardResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1DF68944BED3CE95A8042249DE55D69B /* Pods-AdAstra-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FF459FF107085F08D252B362539B46 /* Pods-AdAstra-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F3400B6C3F9287F32005289A348AF9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		27740B2D92DF0DB8358030B84BBF08CE /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67E6ECECA444D4C220B20213EE1C5E /* UIStoryboard+StoryboardViewControllerResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		29111979D709CA73D42DA46C87FF73C5 /* StoryboardViewControllerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57395102F058B74B9B76C940D482DF2 /* StoryboardViewControllerResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		29C9305242076D40FCAC3626CDF86890 /* NibResource+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA40EC3321639B9D5EBA59E3F1B752A /* NibResource+UIKit.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3EFC13629D58003A72A9B1C00E15032A /* UINib+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B085B2C6081BFD144813DDC379DACB /* UINib+NibResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		415514906492D5C8F223D0CA825173F9 /* UIViewController+NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C399C5A7E2E5C28A4EB7BECA31E669E /* UIViewController+NibResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4FD4C9BA09714CD5F1E3E292FF617CF8 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8318527EF38789A73EA2E701430DAB /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		58CF0E84323A846CE050686BA9F03D87 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF77AE0471B098FEE5640CBE78B31938 /* Validatable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5A7598EC188012866A4A450C2877A2E1 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69D23B1B8F8F0A4536322AC955724F /* UIViewController+StoryboardSegueIdentifierProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5C65320FAE4E819712CFEB9F229512C7 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10BCA7238454AF706EB5A29C7D57B47 /* ColorResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F243CBCB8A34E4C5FF07C42EED3F796 /* Data+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1AEB331A71A3963A299AD86F0DE2EE /* Data+FileResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		66B91397F863B924A29B5B1882A6D35F /* UIImage+ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C190497E3564E23371E91A7C8795D9 /* UIImage+ImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		71D73DA9E8EFEF8A2673D78E577416D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		785F1D5169DD7A4A2213C87110837FB2 /* Pods-AdAstra-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FE575B4056BA14134BAF0F14142A40 /* Pods-AdAstra-dummy.m */; };
+		88B2870F750622E7CB1B82E9E1B2F2FF /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63907F4B76B693B0B7A7F80125BC0C11 /* FontResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		92AE465CB09A05F7758AA738143CA329 /* UIColor+ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5849E796458268D06914750853FB6C /* UIColor+ColorResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94E5296A44717694292DE66CB74209D9 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A1C4C695F07DD06502D8250AA39295 /* ImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A0BE751E747142CC73FEA3BC01ACB85E /* R.swift.Library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC602562C9705C3258414B226FC6C53 /* R.swift.Library-dummy.m */; };
+		A8DCADC7E39DD8B53023022BDB913D49 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D15B7575D087911BF8E4A9B0F802E8 /* ReuseIdentifierProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BBA6272CD8BDE9A0C38F596B03A5A814 /* Pods-AdAstraTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E1AA129702305013A11D7F61EFC6DE0 /* Pods-AdAstraTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C23194DAB7BBC2A99DE1558AA1B1C944 /* Pods-AdAstraTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FB1B1980CC7BE3C2CD7F2BA9D2C3A4 /* Pods-AdAstraTests-dummy.m */; };
+		D722610B4BA6EEB53560AADDC28CFE23 /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC7D504D0CF08852A87E23684E0E48 /* NibResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DD45BB85039123D9F4CA5A0E485CF8A4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8156236A5E30A0B61AC43E689E7D9A2D /* UITableView+ReuseIdentifierProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DD7ACE0067CD3D11CB1AAE861C137CDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		E3DBEFE1573345AC76420E88BD07B483 /* Bundle+FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF83FE6040163C9AA7D022F7A6E82B8 /* Bundle+FileResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E403FDA0279E5E72A6D9BAAE86B4F31E /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295A252794A88B0302A8D993B9BBDB30 /* FileResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E4A42B694FC6DFF491261462CB5B3CDC /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29739D8A3EAFC9D3FA0414A1B3F926F1 /* StoryboardResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EDC8B6A207C4207A3DC0D54A1D6D0CAF /* StoryboardResourceWithInitialController+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB75D11A750103CCB604E5694E4C20D /* StoryboardResourceWithInitialController+UIKit.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F699D397713F199C277C64FD9AB94F19 /* UIFont+FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524BF58C8358BBB5F83DB427754DAFB /* UIFont+FontResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FC72808F1823FD334CC8EAA9D3720642 /* StoryboardSegueIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB0D8C4BDAFB09A8B2F6E270DBBC96 /* StoryboardSegueIdentifierProtocol.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FFA7824FFD5D1CB6B5860711564DBCDB /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A613B5B67978A665AC4B5F9699A06BD6 /* StringResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13E3C9BF5025D23B458155349C0C9A8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1AC9AB594807B7B7D6B74DF8C33D3B8;
+			remoteInfo = R.swift.Library;
+		};
+		B73654393E341A702443C44F2C5AD9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5687322B2F663B000B5CF3EF79B53B1B;
+			remoteInfo = "Pods-AdAstra";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CABA9E56E7F500276F43071373726A /* Pods-AdAstraTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdAstraTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A69D23B1B8F8F0A4536322AC955724F /* UIViewController+StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StoryboardSegueIdentifierProtocol.swift"; path = "Library/UIKit/UIViewController+StoryboardSegueIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		1EA40EC3321639B9D5EBA59E3F1B752A /* NibResource+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibResource+UIKit.swift"; path = "Library/UIKit/NibResource+UIKit.swift"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2490D22FD23D572EF0B587AE980A2877 /* UICollectionView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UICollectionView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		295A252794A88B0302A8D993B9BBDB30 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Library/Core/FileResource.swift; sourceTree = "<group>"; };
+		29739D8A3EAFC9D3FA0414A1B3F926F1 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Library/Core/StoryboardResource.swift; sourceTree = "<group>"; };
+		35A0A9B82AE82FE2C034B051424BF592 /* UIStoryboard+StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardResource.swift"; sourceTree = "<group>"; };
+		39D15B7575D087911BF8E4A9B0F802E8 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReuseIdentifierProtocol.swift; path = Library/Core/ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		3CAC7D504D0CF08852A87E23684E0E48 /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Library/Core/NibResource.swift; sourceTree = "<group>"; };
+		3E8318527EF38789A73EA2E701430DAB /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; path = "Library/UIKit/TypedStoryboardSegueInfo+UIStoryboardSegue.swift"; sourceTree = "<group>"; };
+		4650DDB861E1A92AF27EC9DE5C4BF51A /* Pods-AdAstra-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdAstra-frameworks.sh"; sourceTree = "<group>"; };
+		4A1AEB331A71A3963A299AD86F0DE2EE /* Data+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileResource.swift"; path = "Library/Foundation/Data+FileResource.swift"; sourceTree = "<group>"; };
+		4C399C5A7E2E5C28A4EB7BECA31E669E /* UIViewController+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+NibResource.swift"; path = "Library/UIKit/UIViewController+NibResource.swift"; sourceTree = "<group>"; };
+		4E1826FB20B7F9B192D26DA609A59AE4 /* Pods-AdAstra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdAstra.debug.xcconfig"; sourceTree = "<group>"; };
+		4EF33D20F75CC0220CDF5F4F67751FD5 /* Rswift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rswift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FB1B1980CC7BE3C2CD7F2BA9D2C3A4 /* Pods-AdAstraTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdAstraTests-dummy.m"; sourceTree = "<group>"; };
+		63907F4B76B693B0B7A7F80125BC0C11 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Library/Core/FontResource.swift; sourceTree = "<group>"; };
+		63B085B2C6081BFD144813DDC379DACB /* UINib+NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINib+NibResource.swift"; path = "Library/UIKit/UINib+NibResource.swift"; sourceTree = "<group>"; };
+		6917791106AB723E03B819BE88A53169 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CE50A4A5384CF533CFB0FA27ADDE460 /* R.swift.Library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.Library.modulemap; sourceTree = "<group>"; };
+		726FB35B1E5A6F5ACB7299DC435C225B /* Pods-AdAstraTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdAstraTests-frameworks.sh"; sourceTree = "<group>"; };
+		7A2DC37F07C08FBC2F6131D8460C6D8D /* Pods-AdAstra-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdAstra-resources.sh"; sourceTree = "<group>"; };
+		7E1AA129702305013A11D7F61EFC6DE0 /* Pods-AdAstraTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdAstraTests-umbrella.h"; sourceTree = "<group>"; };
+		8156236A5E30A0B61AC43E689E7D9A2D /* UITableView+ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+ReuseIdentifierProtocol.swift"; path = "Library/UIKit/UITableView+ReuseIdentifierProtocol.swift"; sourceTree = "<group>"; };
+		8630E27B7213246C9D6B8A4FDBE0F4E8 /* Pods-AdAstra.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdAstra.modulemap"; sourceTree = "<group>"; };
+		8EC602562C9705C3258414B226FC6C53 /* R.swift.Library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift.Library-dummy.m"; sourceTree = "<group>"; };
+		9112FC04C179F58B0E91EA313CE588E0 /* Pods-AdAstraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdAstraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		920DCEC3D995385B85F1DE42D06A5FEB /* R.swift.Library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.Library.xcconfig; sourceTree = "<group>"; };
+		94FE575B4056BA14134BAF0F14142A40 /* Pods-AdAstra-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdAstra-dummy.m"; sourceTree = "<group>"; };
+		99C190497E3564E23371E91A7C8795D9 /* UIImage+ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageResource.swift"; path = "Library/UIKit/UIImage+ImageResource.swift"; sourceTree = "<group>"; };
+		9FCB0D8C4BDAFB09A8B2F6E270DBBC96 /* StoryboardSegueIdentifierProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardSegueIdentifierProtocol.swift; path = Library/Core/StoryboardSegueIdentifierProtocol.swift; sourceTree = "<group>"; };
+		A10BCA7238454AF706EB5A29C7D57B47 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Library/Core/ColorResource.swift; sourceTree = "<group>"; };
+		A5DCF4BF8D81280CAD387F089A486627 /* Pods-AdAstra.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdAstra.staging.xcconfig"; sourceTree = "<group>"; };
+		A613B5B67978A665AC4B5F9699A06BD6 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Library/Core/StringResource.swift; sourceTree = "<group>"; };
+		A907A6832B4E956C7585AD688ABADFB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF83FE6040163C9AA7D022F7A6E82B8 /* Bundle+FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileResource.swift"; path = "Library/Foundation/Bundle+FileResource.swift"; sourceTree = "<group>"; };
+		AB3B6B0BC7C7650033B4D8108070E028 /* Pods-AdAstraTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdAstraTests.staging.xcconfig"; sourceTree = "<group>"; };
+		ADB75D11A750103CCB604E5694E4C20D /* StoryboardResourceWithInitialController+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardResourceWithInitialController+UIKit.swift"; path = "Library/UIKit/StoryboardResourceWithInitialController+UIKit.swift"; sourceTree = "<group>"; };
+		AF1562F2036F4F0DE81DD8AF959D07A3 /* Pods-AdAstraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdAstraTests.release.xcconfig"; sourceTree = "<group>"; };
+		B73863DE426866FE423A895DE0432C91 /* R.swift.Library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-umbrella.h"; sourceTree = "<group>"; };
+		B7FF459FF107085F08D252B362539B46 /* Pods-AdAstra-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdAstra-umbrella.h"; sourceTree = "<group>"; };
+		BED0409E73CFF2FB87463A3CA2625CB7 /* Pods_AdAstraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdAstraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5849E796458268D06914750853FB6C /* UIColor+ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ColorResource.swift"; path = "Library/UIKit/UIColor+ColorResource.swift"; sourceTree = "<group>"; };
+		C9A1C4C695F07DD06502D8250AA39295 /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Library/Core/ImageResource.swift; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CB95A675AB45CBEE54180CF2A676144B /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Library/Core/Identifier.swift; sourceTree = "<group>"; };
+		D96C4771D4A2689159C03AD304693557 /* Pods_AdAstra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdAstra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA768153A99F67118C8B94FBBC5BE7EE /* Pods-AdAstraTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdAstraTests.modulemap"; sourceTree = "<group>"; };
+		DCDE0C425F5A1FC143B3A6BA1FB53748 /* Pods-AdAstraTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdAstraTests-resources.sh"; sourceTree = "<group>"; };
+		DEA805F781DD8844A74DE69738B88F24 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF77AE0471B098FEE5640CBE78B31938 /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Library/Core/Validatable.swift; sourceTree = "<group>"; };
+		E524BF58C8358BBB5F83DB427754DAFB /* UIFont+FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+FontResource.swift"; path = "Library/UIKit/UIFont+FontResource.swift"; sourceTree = "<group>"; };
+		E6953B73A213743349F675F849ACB8C2 /* Pods-AdAstra-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdAstra-acknowledgements.plist"; sourceTree = "<group>"; };
+		EEBA74A204F51FD7E902A1EBA3489116 /* Pods-AdAstra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdAstra.release.xcconfig"; sourceTree = "<group>"; };
+		F012DED8F229B53B3BD1835299D7C4E0 /* R.swift.Library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift.Library-prefix.pch"; sourceTree = "<group>"; };
+		F52A694071080F497921AD0F2E7388AB /* Pods-AdAstra-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdAstra-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F57395102F058B74B9B76C940D482DF2 /* StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardViewControllerResource.swift; path = Library/Core/StoryboardViewControllerResource.swift; sourceTree = "<group>"; };
+		F9B492E7468F6AE8BDF02CF7E16EA8FF /* Pods-AdAstraTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdAstraTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB67E6ECECA444D4C220B20213EE1C5E /* UIStoryboard+StoryboardViewControllerResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+StoryboardViewControllerResource.swift"; path = "Library/UIKit/UIStoryboard+StoryboardViewControllerResource.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EE7BA886B1CBD82EC71E8BB78B879ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7ACE0067CD3D11CB1AAE861C137CDD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		933B58A7B4D26F65F1CFD27C79544F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D73DA9E8EFEF8A2673D78E577416D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C676DA9DCA0863EB739AF49A3F9A52FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F3400B6C3F9287F32005289A348AF9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A55950E3EA988E8648789B1C07FB98A /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		0C0D23CB01F7564D5D4223ACD1DAB39C /* R.swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = R.swift;
+			sourceTree = "<group>";
+		};
+		0DDF1E05EF7D1A9CF1BE604095C36917 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C0D23CB01F7564D5D4223ACD1DAB39C /* R.swift */,
+				350A908B23FD7B1B67FEB84AF0B2656F /* R.swift.Library */,
+				0A55950E3EA988E8648789B1C07FB98A /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		350A908B23FD7B1B67FEB84AF0B2656F /* R.swift.Library */ = {
+			isa = PBXGroup;
+			children = (
+				AAF83FE6040163C9AA7D022F7A6E82B8 /* Bundle+FileResource.swift */,
+				A10BCA7238454AF706EB5A29C7D57B47 /* ColorResource.swift */,
+				4A1AEB331A71A3963A299AD86F0DE2EE /* Data+FileResource.swift */,
+				295A252794A88B0302A8D993B9BBDB30 /* FileResource.swift */,
+				63907F4B76B693B0B7A7F80125BC0C11 /* FontResource.swift */,
+				CB95A675AB45CBEE54180CF2A676144B /* Identifier.swift */,
+				C9A1C4C695F07DD06502D8250AA39295 /* ImageResource.swift */,
+				3CAC7D504D0CF08852A87E23684E0E48 /* NibResource.swift */,
+				1EA40EC3321639B9D5EBA59E3F1B752A /* NibResource+UIKit.swift */,
+				39D15B7575D087911BF8E4A9B0F802E8 /* ReuseIdentifierProtocol.swift */,
+				29739D8A3EAFC9D3FA0414A1B3F926F1 /* StoryboardResource.swift */,
+				ADB75D11A750103CCB604E5694E4C20D /* StoryboardResourceWithInitialController+UIKit.swift */,
+				9FCB0D8C4BDAFB09A8B2F6E270DBBC96 /* StoryboardSegueIdentifierProtocol.swift */,
+				F57395102F058B74B9B76C940D482DF2 /* StoryboardViewControllerResource.swift */,
+				A613B5B67978A665AC4B5F9699A06BD6 /* StringResource.swift */,
+				3E8318527EF38789A73EA2E701430DAB /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift */,
+				2490D22FD23D572EF0B587AE980A2877 /* UICollectionView+ReuseIdentifierProtocol.swift */,
+				BF5849E796458268D06914750853FB6C /* UIColor+ColorResource.swift */,
+				E524BF58C8358BBB5F83DB427754DAFB /* UIFont+FontResource.swift */,
+				99C190497E3564E23371E91A7C8795D9 /* UIImage+ImageResource.swift */,
+				63B085B2C6081BFD144813DDC379DACB /* UINib+NibResource.swift */,
+				35A0A9B82AE82FE2C034B051424BF592 /* UIStoryboard+StoryboardResource.swift */,
+				FB67E6ECECA444D4C220B20213EE1C5E /* UIStoryboard+StoryboardViewControllerResource.swift */,
+				8156236A5E30A0B61AC43E689E7D9A2D /* UITableView+ReuseIdentifierProtocol.swift */,
+				4C399C5A7E2E5C28A4EB7BECA31E669E /* UIViewController+NibResource.swift */,
+				0A69D23B1B8F8F0A4536322AC955724F /* UIViewController+StoryboardSegueIdentifierProtocol.swift */,
+				DF77AE0471B098FEE5640CBE78B31938 /* Validatable.swift */,
+				7711B8D92DE0087DEA609206962CEEF4 /* Support Files */,
+			);
+			path = R.swift.Library;
+			sourceTree = "<group>";
+		};
+		6047AC9C314815664209814F8132C915 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC18315E50A2E05DCD0F103A925BF3F6 /* Pods-AdAstra */,
+				A7AC8F070F6A90BCB02BC03F3C7FACEC /* Pods-AdAstraTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		62D0F08C6FB866898BB2427E73E20DA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D96C4771D4A2689159C03AD304693557 /* Pods_AdAstra.framework */,
+				BED0409E73CFF2FB87463A3CA2625CB7 /* Pods_AdAstraTests.framework */,
+				4EF33D20F75CC0220CDF5F4F67751FD5 /* Rswift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7711B8D92DE0087DEA609206962CEEF4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A907A6832B4E956C7585AD688ABADFB8 /* Info.plist */,
+				6CE50A4A5384CF533CFB0FA27ADDE460 /* R.swift.Library.modulemap */,
+				920DCEC3D995385B85F1DE42D06A5FEB /* R.swift.Library.xcconfig */,
+				8EC602562C9705C3258414B226FC6C53 /* R.swift.Library-dummy.m */,
+				F012DED8F229B53B3BD1835299D7C4E0 /* R.swift.Library-prefix.pch */,
+				B73863DE426866FE423A895DE0432C91 /* R.swift.Library-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/R.swift.Library";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A7AC8F070F6A90BCB02BC03F3C7FACEC /* Pods-AdAstraTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEA805F781DD8844A74DE69738B88F24 /* Info.plist */,
+				DA768153A99F67118C8B94FBBC5BE7EE /* Pods-AdAstraTests.modulemap */,
+				F9B492E7468F6AE8BDF02CF7E16EA8FF /* Pods-AdAstraTests-acknowledgements.markdown */,
+				06CABA9E56E7F500276F43071373726A /* Pods-AdAstraTests-acknowledgements.plist */,
+				55FB1B1980CC7BE3C2CD7F2BA9D2C3A4 /* Pods-AdAstraTests-dummy.m */,
+				726FB35B1E5A6F5ACB7299DC435C225B /* Pods-AdAstraTests-frameworks.sh */,
+				DCDE0C425F5A1FC143B3A6BA1FB53748 /* Pods-AdAstraTests-resources.sh */,
+				7E1AA129702305013A11D7F61EFC6DE0 /* Pods-AdAstraTests-umbrella.h */,
+				9112FC04C179F58B0E91EA313CE588E0 /* Pods-AdAstraTests.debug.xcconfig */,
+				AF1562F2036F4F0DE81DD8AF959D07A3 /* Pods-AdAstraTests.release.xcconfig */,
+				AB3B6B0BC7C7650033B4D8108070E028 /* Pods-AdAstraTests.staging.xcconfig */,
+			);
+			name = "Pods-AdAstraTests";
+			path = "Target Support Files/Pods-AdAstraTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0DDF1E05EF7D1A9CF1BE604095C36917 /* Pods */,
+				62D0F08C6FB866898BB2427E73E20DA7 /* Products */,
+				6047AC9C314815664209814F8132C915 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC18315E50A2E05DCD0F103A925BF3F6 /* Pods-AdAstra */ = {
+			isa = PBXGroup;
+			children = (
+				6917791106AB723E03B819BE88A53169 /* Info.plist */,
+				8630E27B7213246C9D6B8A4FDBE0F4E8 /* Pods-AdAstra.modulemap */,
+				F52A694071080F497921AD0F2E7388AB /* Pods-AdAstra-acknowledgements.markdown */,
+				E6953B73A213743349F675F849ACB8C2 /* Pods-AdAstra-acknowledgements.plist */,
+				94FE575B4056BA14134BAF0F14142A40 /* Pods-AdAstra-dummy.m */,
+				4650DDB861E1A92AF27EC9DE5C4BF51A /* Pods-AdAstra-frameworks.sh */,
+				7A2DC37F07C08FBC2F6131D8460C6D8D /* Pods-AdAstra-resources.sh */,
+				B7FF459FF107085F08D252B362539B46 /* Pods-AdAstra-umbrella.h */,
+				4E1826FB20B7F9B192D26DA609A59AE4 /* Pods-AdAstra.debug.xcconfig */,
+				EEBA74A204F51FD7E902A1EBA3489116 /* Pods-AdAstra.release.xcconfig */,
+				A5DCF4BF8D81280CAD387F089A486627 /* Pods-AdAstra.staging.xcconfig */,
+			);
+			name = "Pods-AdAstra";
+			path = "Target Support Files/Pods-AdAstra";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		39232DA454F1DFD23DD9585154FBA4FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA6272CD8BDE9A0C38F596B03A5A814 /* Pods-AdAstraTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A7831AA68812B6025B128DB3AFF3C03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084DA7A19427D05934BC7CD443AA6742 /* R.swift.Library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD99F8B21AF56E84214577D61ECAF96A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF68944BED3CE95A8042249DE55D69B /* Pods-AdAstra-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C6DD2BA9578C604600FC0DBA30CF7F2 /* Pods-AdAstraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF8961E7873A64B47C4DD186A8C498A /* Build configuration list for PBXNativeTarget "Pods-AdAstraTests" */;
+			buildPhases = (
+				39232DA454F1DFD23DD9585154FBA4FE /* Headers */,
+				BA3E56A948CAF2514DA016EB780664B9 /* Sources */,
+				8EE7BA886B1CBD82EC71E8BB78B879ED /* Frameworks */,
+				73D77612AAC1BF04A50CFD99BC91BAF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44339180D746C6299583E1F008FD464 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdAstraTests";
+			productName = "Pods-AdAstraTests";
+			productReference = BED0409E73CFF2FB87463A3CA2625CB7 /* Pods_AdAstraTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5687322B2F663B000B5CF3EF79B53B1B /* Pods-AdAstra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1C2EE92207937A5A8B4C0773CFA538 /* Build configuration list for PBXNativeTarget "Pods-AdAstra" */;
+			buildPhases = (
+				FD99F8B21AF56E84214577D61ECAF96A /* Headers */,
+				3DF182EA4125DF335287E58F4EFA34E8 /* Sources */,
+				933B58A7B4D26F65F1CFD27C79544F5D /* Frameworks */,
+				195E999D89122C558C9A0F0F37163D74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66B64BFA4D21A0CB7B303874B0A40AC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdAstra";
+			productName = "Pods-AdAstra";
+			productReference = D96C4771D4A2689159C03AD304693557 /* Pods_AdAstra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1AC9AB594807B7B7D6B74DF8C33D3B8 /* R.swift.Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58CDD497621E3F8BD84FB1487DEFBB08 /* Build configuration list for PBXNativeTarget "R.swift.Library" */;
+			buildPhases = (
+				8A7831AA68812B6025B128DB3AFF3C03 /* Headers */,
+				7D85F3AB11812F364C2A208EB8A27AEB /* Sources */,
+				C676DA9DCA0863EB739AF49A3F9A52FE /* Frameworks */,
+				EC32B94CD618A0604791C11046D37411 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = R.swift.Library;
+			productName = R.swift.Library;
+			productReference = 4EF33D20F75CC0220CDF5F4F67751FD5 /* Rswift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 62D0F08C6FB866898BB2427E73E20DA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5687322B2F663B000B5CF3EF79B53B1B /* Pods-AdAstra */,
+				2C6DD2BA9578C604600FC0DBA30CF7F2 /* Pods-AdAstraTests */,
+				F1AC9AB594807B7B7D6B74DF8C33D3B8 /* R.swift.Library */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		195E999D89122C558C9A0F0F37163D74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D77612AAC1BF04A50CFD99BC91BAF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC32B94CD618A0604791C11046D37411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF182EA4125DF335287E58F4EFA34E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785F1D5169DD7A4A2213C87110837FB2 /* Pods-AdAstra-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D85F3AB11812F364C2A208EB8A27AEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DBEFE1573345AC76420E88BD07B483 /* Bundle+FileResource.swift in Sources */,
+				5C65320FAE4E819712CFEB9F229512C7 /* ColorResource.swift in Sources */,
+				5F243CBCB8A34E4C5FF07C42EED3F796 /* Data+FileResource.swift in Sources */,
+				E403FDA0279E5E72A6D9BAAE86B4F31E /* FileResource.swift in Sources */,
+				88B2870F750622E7CB1B82E9E1B2F2FF /* FontResource.swift in Sources */,
+				13877F534C56935DDC4EB12E0F9C2A6B /* Identifier.swift in Sources */,
+				94E5296A44717694292DE66CB74209D9 /* ImageResource.swift in Sources */,
+				29C9305242076D40FCAC3626CDF86890 /* NibResource+UIKit.swift in Sources */,
+				D722610B4BA6EEB53560AADDC28CFE23 /* NibResource.swift in Sources */,
+				A0BE751E747142CC73FEA3BC01ACB85E /* R.swift.Library-dummy.m in Sources */,
+				A8DCADC7E39DD8B53023022BDB913D49 /* ReuseIdentifierProtocol.swift in Sources */,
+				E4A42B694FC6DFF491261462CB5B3CDC /* StoryboardResource.swift in Sources */,
+				EDC8B6A207C4207A3DC0D54A1D6D0CAF /* StoryboardResourceWithInitialController+UIKit.swift in Sources */,
+				FC72808F1823FD334CC8EAA9D3720642 /* StoryboardSegueIdentifierProtocol.swift in Sources */,
+				29111979D709CA73D42DA46C87FF73C5 /* StoryboardViewControllerResource.swift in Sources */,
+				FFA7824FFD5D1CB6B5860711564DBCDB /* StringResource.swift in Sources */,
+				4FD4C9BA09714CD5F1E3E292FF617CF8 /* TypedStoryboardSegueInfo+UIStoryboardSegue.swift in Sources */,
+				1379D0F0199D540753AAD83E354D6B38 /* UICollectionView+ReuseIdentifierProtocol.swift in Sources */,
+				92AE465CB09A05F7758AA738143CA329 /* UIColor+ColorResource.swift in Sources */,
+				F699D397713F199C277C64FD9AB94F19 /* UIFont+FontResource.swift in Sources */,
+				66B91397F863B924A29B5B1882A6D35F /* UIImage+ImageResource.swift in Sources */,
+				3EFC13629D58003A72A9B1C00E15032A /* UINib+NibResource.swift in Sources */,
+				1C0535559164A36910266BF84FE1B8B7 /* UIStoryboard+StoryboardResource.swift in Sources */,
+				27740B2D92DF0DB8358030B84BBF08CE /* UIStoryboard+StoryboardViewControllerResource.swift in Sources */,
+				DD45BB85039123D9F4CA5A0E485CF8A4 /* UITableView+ReuseIdentifierProtocol.swift in Sources */,
+				415514906492D5C8F223D0CA825173F9 /* UIViewController+NibResource.swift in Sources */,
+				5A7598EC188012866A4A450C2877A2E1 /* UIViewController+StoryboardSegueIdentifierProtocol.swift in Sources */,
+				58CF0E84323A846CE050686BA9F03D87 /* Validatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3E56A948CAF2514DA016EB780664B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23194DAB7BBC2A99DE1558AA1B1C944 /* Pods-AdAstraTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66B64BFA4D21A0CB7B303874B0A40AC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift.Library;
+			target = F1AC9AB594807B7B7D6B74DF8C33D3B8 /* R.swift.Library */;
+			targetProxy = 13E3C9BF5025D23B458155349C0C9A8B /* PBXContainerItemProxy */;
+		};
+		F44339180D746C6299583E1F008FD464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AdAstra";
+			target = 5687322B2F663B000B5CF3EF79B53B1B /* Pods-AdAstra */;
+			targetProxy = B73654393E341A702443C44F2C5AD9F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		146E60A4FEC40C34C53F0D6A8584DE4C /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5DCF4BF8D81280CAD387F089A486627 /* Pods-AdAstra.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdAstra/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdAstra/Pods-AdAstra.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		18CCFB8782EBDBDA4ECFCDD5FCE1C3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEBA74A204F51FD7E902A1EBA3489116 /* Pods-AdAstra.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdAstra/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdAstra/Pods-AdAstra.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28E341B1AF0DD016DD038DF1CC6F9AB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920DCEC3D995385B85F1DE42D06A5FEB /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B6CD7C3252B813CE85FCCFD529A2A53 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920DCEC3D995385B85F1DE42D06A5FEB /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		466BF1FC204008B7B1E0670340618EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1826FB20B7F9B192D26DA609A59AE4 /* Pods-AdAstra.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdAstra/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdAstra/Pods-AdAstra.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		984B99C322F45D243D991CA6A63EF1F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9D2786BDA828BA31EFBBEE02A242A11F /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_STAGING=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Staging;
+		};
+		B7856AD1C5AC0627FA21D0405D05A2D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9112FC04C179F58B0E91EA313CE588E0 /* Pods-AdAstraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdAstraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdAstraTests/Pods-AdAstraTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7FD5B0ACE9286FFDADF4ACE2322AF4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E71918F9824CBEF4031E8CF8EC7CEA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1562F2036F4F0DE81DD8AF959D07A3 /* Pods-AdAstraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdAstraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdAstraTests/Pods-AdAstraTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E750F8216759E760C665B8989B616400 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3B6B0BC7C7650033B4D8108070E028 /* Pods-AdAstraTests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdAstraTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdAstraTests/Pods-AdAstraTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		FE45917306B022CE049E98F815E9DD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920DCEC3D995385B85F1DE42D06A5FEB /* R.swift.Library.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPANDED_CODE_SIGN_IDENTITY = "";
+				GCC_PREFIX_HEADER = "Target Support Files/R.swift.Library/R.swift.Library-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/R.swift.Library/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/R.swift.Library/R.swift.Library.modulemap";
+				PRODUCT_MODULE_NAME = Rswift;
+				PRODUCT_NAME = Rswift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984B99C322F45D243D991CA6A63EF1F1 /* Debug */,
+				B7FD5B0ACE9286FFDADF4ACE2322AF4A /* Release */,
+				9D2786BDA828BA31EFBBEE02A242A11F /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF8961E7873A64B47C4DD186A8C498A /* Build configuration list for PBXNativeTarget "Pods-AdAstraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7856AD1C5AC0627FA21D0405D05A2D5 /* Debug */,
+				E71918F9824CBEF4031E8CF8EC7CEA7C /* Release */,
+				E750F8216759E760C665B8989B616400 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58CDD497621E3F8BD84FB1487DEFBB08 /* Build configuration list for PBXNativeTarget "R.swift.Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E341B1AF0DD016DD038DF1CC6F9AB0 /* Debug */,
+				FE45917306B022CE049E98F815E9DD84 /* Release */,
+				2B6CD7C3252B813CE85FCCFD529A2A53 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1C2EE92207937A5A8B4C0773CFA538 /* Build configuration list for PBXNativeTarget "Pods-AdAstra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466BF1FC204008B7B1E0670340618EFD /* Debug */,
+				18CCFB8782EBDBDA4ECFCDD5FCE1C3BE /* Release */,
+				146E60A4FEC40C34C53F0D6A8584DE4C /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

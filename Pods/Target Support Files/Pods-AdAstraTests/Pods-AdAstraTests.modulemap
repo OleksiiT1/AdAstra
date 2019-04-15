@@ -1,0 +1,6 @@
+framework module Pods_AdAstraTests {
+  umbrella header "Pods-AdAstraTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

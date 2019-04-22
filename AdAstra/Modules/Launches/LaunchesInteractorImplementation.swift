@@ -9,9 +9,13 @@
 import Foundation
 
 class LaunchesInteractorImplementation: LaunchesInteractor {
-    func loadLaunches() {
-        CommonDataService.get(link: "https://launchlibrary.net/1.4/launch") { [weak self](launches: Launches?, error) in
-            guard let launches = launches?.launches else {
+    
+    
+    func loadLaunches(offset: Int, limit: Int) {
+        let queryBuilder = LaunchesURLBuilder()
+        _ = queryBuilder.set(offset: offset).set(limit: limit)
+        CommonDataService.get(link:queryBuilder.get()) { [weak self](launches: Launches?, error) in
+            guard let launches = launches else {
                 return
             }
             self?.presenter.loaded(launches: launches)

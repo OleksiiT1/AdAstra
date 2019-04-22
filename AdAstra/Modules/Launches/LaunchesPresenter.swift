@@ -10,10 +10,10 @@ import Foundation
 
 protocol LaunchesPresenter: class {
     func viewIsLoaded(_ view: LaunchesView)
-    func loaded(launches: [Launch])
+    func loaded(launches: Launches)
     
     var count: Int { get }
-    func at(_ index: Int) -> Launch
+    func at(_ index: Int) -> CellItem
 }
 
 protocol LaunchesView: class {
@@ -22,7 +22,12 @@ protocol LaunchesView: class {
 
 protocol LaunchesInteractor: class {
     var presenter: LaunchesPresenter! { get set }
-    func loadLaunches()
+    func loadLaunches(offset: Int, limit: Int)
+}
+
+
+protocol CellItem {
+    var cellIdentifier: String { get }    
 }
 
 class LaunchesPresenterImplementation: LaunchesPresenter {
@@ -30,7 +35,11 @@ class LaunchesPresenterImplementation: LaunchesPresenter {
     private weak var view: LaunchesView!
     private var interactor: LaunchesInteractor
     private var launches: [Launch] = []
-    
+    private var isLoading: Bool = false
+    private var didReachedEnd: Bool = false
+    private var offset: Int = 0
+    private var limit: Int = 20
+
     init(interactor: LaunchesInteractor) {
         self.interactor = interactor
         interactor.presenter = self
@@ -38,20 +47,34 @@ class LaunchesPresenterImplementation: LaunchesPresenter {
 
     func viewIsLoaded(_ view: LaunchesView) {
         self.view = view
-        interactor.loadLaunches()
+        isLoading = true
+        interactor.loadLaunches(offset: offset, limit: limit)
     }
 
-    func loaded(launches: [Launch]) {
-        self.launches.append(contentsOf: launches)
+    func loaded(launches: Launches) {
+        offset = launches.offset + launches.count
+        if offset >= launches.total {
+            didReachedEnd = true
+        }
+        self.launches.append(contentsOf: launches.launches)
+        isLoading = false
         view.update()
     }
-    
-    
+
     var count: Int {
-        return launches.count
+        if launches.isEmpty {
+            return 0
+        }
+        return launches.count + ( didReachedEnd ? 0 : 1 )
     }
-    
-    func at(_ index: Int) -> Launch {
-        return launches[index]
+
+    func at(_ index: Int) -> CellItem {
+        if index < launches.count {
+            return launches[index]
+        }
+        if !isLoading {
+            interactor.loadLaunches(offset: offset, limit: limit)
+        }
+        return LoadingCellItem()
     }
 }

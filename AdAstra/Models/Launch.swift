@@ -12,5 +12,5 @@ struct Launch: Codable {
     var id: Int
     var name: String
     var net: String
-    var lsp: String
+//    var lsp: String
 }

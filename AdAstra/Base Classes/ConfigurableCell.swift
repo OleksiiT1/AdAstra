@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 protocol ConfigurableCell {
     func configure(item: CellItem)
 }

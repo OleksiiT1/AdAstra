@@ -1,0 +1,5 @@
+language: swift
+script:
+    - pod install 
+    - xcodebuild test -workspace "AdAstra.xcworkspace" -scheme "AdAstra" -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 6' ONLY_ACTIVE_ARCH=NO
+osx_image: xcode10.2

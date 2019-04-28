@@ -11,3 +11,8 @@ import Foundation
 protocol ConfigurableCell {
     func configure(item: CellItem)
 }
+
+extension ConfigurableCell {
+
+    func configure(item: CellItem) {}
+}

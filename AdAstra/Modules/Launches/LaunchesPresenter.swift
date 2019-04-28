@@ -25,11 +25,13 @@ protocol LaunchesInteractor: class {
 class LaunchesPresenterImplementation: InfiniteCellItemDataSource, LaunchesPresenter {
 
     private weak var view: LaunchesView!
+    private var router: LaunchesRouter
     private var interactor: LaunchesInteractor
     private var isLoading: Bool = false
 
-    init(interactor: LaunchesInteractor) {
+    init(interactor: LaunchesInteractor, router: LaunchesRouter) {
         self.interactor = interactor
+        self.router = router
         super.init()
         interactor.presenter = self
     }

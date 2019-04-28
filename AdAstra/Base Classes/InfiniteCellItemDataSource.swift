@@ -14,14 +14,14 @@ class InfiniteCellItemDataSource: CellDataSource {
     private var didReachedEnd: Bool = false
     private var offset: Int = 0
     private var limit: Int = 20
-    
+
     var count: Int {
         if items.isEmpty {
             return 0
         }
         return items.count + ( didReachedEnd ? 0 : 1 )
     }
-    
+
     func at(_ index: Int) -> CellItem {
         if index < items.count {
             return items[index]
@@ -29,7 +29,7 @@ class InfiniteCellItemDataSource: CellDataSource {
         load(offset: offset, limit: limit)
         return LoadingCellItem()
     }
-    
+
     func append(rawCellData: RawCellData) {
         offset = rawCellData.offset + rawCellData.count
         if offset >= rawCellData.total {
@@ -37,13 +37,11 @@ class InfiniteCellItemDataSource: CellDataSource {
         }
         items.append(contentsOf: rawCellData.content)
     }
-    
+
     func prefetch(_ indexes: [Int]) {
-        
+
     }
-    
-    func load(offset: Int, limit: Int) {
-        
-    }
-    
+
+    func load(offset: Int, limit: Int) {}
+
 }

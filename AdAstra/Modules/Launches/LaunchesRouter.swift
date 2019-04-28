@@ -20,7 +20,11 @@ class LaunchesRouter {
     func rootController() -> UIViewController {
         let controller = LaunchesTableViewController()
         let interactor = LaunchesInteractorImplementation()
-        controller.presenter = LaunchesPresenterImplementation(interactor: interactor)
-        return UINavigationController(rootViewController: controller)
+        controller.presenter = LaunchesPresenterImplementation(interactor: interactor, router: self)
+        let navigationController = UINavigationController(rootViewController: controller)
+        navigationController.tabBarItem = UITabBarItem(title: "Launches", image: nil, tag: 0)
+        controller.title = "Launches"
+        navigationController.navigationBar.prefersLargeTitles = true
+        return navigationController
     }    
 }

@@ -16,7 +16,7 @@ enum CommonDataServiceError: Error {
 }
 
 class CommonDataService {
-    
+
     class func get<T:Codable>(link: String, completion: @escaping (T?, Error?)->()) {
         guard let url = URL(string: link) else { completion(nil, CommonDataServiceError.wrongURL); return  }
         let request = URLRequest(url: url)

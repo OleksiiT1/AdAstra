@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class LoadingCellItem: CellItem {
     var cellIdentifier: String {
         return R.reuseIdentifier.loadingTableViewCell.identifier

@@ -10,6 +10,7 @@ import UIKit
 
 class LoadingTableViewCell: UITableViewCell, ConfigurableCell {
 
+    @IBOutlet private weak var indicator: UIActivityIndicatorView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,8 +22,8 @@ class LoadingTableViewCell: UITableViewCell, ConfigurableCell {
         // Configure the view for the selected state
     }
     
-    func configure(item: CellItem) {
-        
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        indicator.startAnimating()
     }
-    
 }

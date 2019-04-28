@@ -36,12 +36,18 @@
 		D9BCD2012275CF840095ADBB /* CellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD2002275CF840095ADBB /* CellDataSource.swift */; };
 		D9BCD2032275D0BA0095ADBB /* InfiniteCellItemDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD2022275D0BA0095ADBB /* InfiniteCellItemDataSource.swift */; };
 		D9BCD2052275D1EF0095ADBB /* RawCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD2042275D1EF0095ADBB /* RawCellData.swift */; };
+		D9BCD20C227618780095ADBB /* MissionsInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD20A2275F5210095ADBB /* MissionsInteractorImplementation.swift */; };
+		D9BCD20D2276189A0095ADBB /* MissionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD2092275F5210095ADBB /* MissionPresenter.swift */; };
+		D9BCD210227618E90095ADBB /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD20F227618E90095ADBB /* Missions.swift */; };
+		D9BCD2122276191F0095ADBB /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD2112276191F0095ADBB /* Mission.swift */; };
+		D9BCD213227619550095ADBB /* MissionsURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD20B2275F5210095ADBB /* MissionsURLBuilder.swift */; };
+		D9BCD21422761A610095ADBB /* MissionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD2072275F5200095ADBB /* MissionTableViewController.swift */; };
+		D9BCD21622761B1F0095ADBB /* MissionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD21522761B1F0095ADBB /* MissionsRouter.swift */; };
 		F204F57C226E4B0E00C85091 /* LaunchesURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F57B226E4B0E00C85091 /* LaunchesURLBuilder.swift */; };
 		F204F581226E554E00C85091 /* LaunchCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F57F226E554E00C85091 /* LaunchCellTableViewCell.swift */; };
 		F204F582226E554E00C85091 /* LaunchCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F204F580226E554E00C85091 /* LaunchCellTableViewCell.xib */; };
 		F204F584226E57AC00C85091 /* Launch+CellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F583226E57AC00C85091 /* Launch+CellItem.swift */; };
 		F204F586226E586C00C85091 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F585226E586C00C85091 /* ConfigurableCell.swift */; };
-		F204F588226E5A1800C85091 /* LaunchesCell+ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F587226E5A1800C85091 /* LaunchesCell+ConfigurableCell.swift */; };
 		F204F58B226E5AEF00C85091 /* LoadingCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F58A226E5AEF00C85091 /* LoadingCellItem.swift */; };
 		F204F58E226E5B2300C85091 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F58C226E5B2300C85091 /* LoadingTableViewCell.swift */; };
 		F204F58F226E5B2300C85091 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F204F58D226E5B2300C85091 /* LoadingTableViewCell.xib */; };
@@ -99,12 +105,18 @@
 		D9BCD2002275CF840095ADBB /* CellDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDataSource.swift; sourceTree = "<group>"; };
 		D9BCD2022275D0BA0095ADBB /* InfiniteCellItemDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCellItemDataSource.swift; sourceTree = "<group>"; };
 		D9BCD2042275D1EF0095ADBB /* RawCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawCellData.swift; sourceTree = "<group>"; };
+		D9BCD2072275F5200095ADBB /* MissionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewController.swift; sourceTree = "<group>"; };
+		D9BCD2092275F5210095ADBB /* MissionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionPresenter.swift; sourceTree = "<group>"; };
+		D9BCD20A2275F5210095ADBB /* MissionsInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsInteractorImplementation.swift; sourceTree = "<group>"; };
+		D9BCD20B2275F5210095ADBB /* MissionsURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsURLBuilder.swift; sourceTree = "<group>"; };
+		D9BCD20F227618E90095ADBB /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
+		D9BCD2112276191F0095ADBB /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		D9BCD21522761B1F0095ADBB /* MissionsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionsRouter.swift; sourceTree = "<group>"; };
 		F204F57B226E4B0E00C85091 /* LaunchesURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesURLBuilder.swift; sourceTree = "<group>"; };
 		F204F57F226E554E00C85091 /* LaunchCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellTableViewCell.swift; sourceTree = "<group>"; };
 		F204F580226E554E00C85091 /* LaunchCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchCellTableViewCell.xib; sourceTree = "<group>"; };
 		F204F583226E57AC00C85091 /* Launch+CellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Launch+CellItem.swift"; sourceTree = "<group>"; };
 		F204F585226E586C00C85091 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
-		F204F587226E5A1800C85091 /* LaunchesCell+ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchesCell+ConfigurableCell.swift"; sourceTree = "<group>"; };
 		F204F58A226E5AEF00C85091 /* LoadingCellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellItem.swift; sourceTree = "<group>"; };
 		F204F58C226E5B2300C85091 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
 		F204F58D226E5B2300C85091 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
@@ -205,6 +217,8 @@
 				D96719E922650945007563BE /* Launches.swift */,
 				D96719EB22650A02007563BE /* Launch.swift */,
 				D9BCD1FE2275CB0B0095ADBB /* Launches+RawCellData.swift */,
+				D9BCD20F227618E90095ADBB /* Missions.swift */,
+				D9BCD2112276191F0095ADBB /* Mission.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +226,7 @@
 		2AB31D9F1F38741400B7D1F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D9BCD2062275F4FB0095ADBB /* Missions */,
 				D96719D72264FDCB007563BE /* Launches */,
 				2A1DD4E21F38A09700712195 /* Launch */,
 			);
@@ -352,12 +367,23 @@
 			path = "Base Classes";
 			sourceTree = "<group>";
 		};
+		D9BCD2062275F4FB0095ADBB /* Missions */ = {
+			isa = PBXGroup;
+			children = (
+				D9BCD21522761B1F0095ADBB /* MissionsRouter.swift */,
+				D9BCD2072275F5200095ADBB /* MissionTableViewController.swift */,
+				D9BCD2092275F5210095ADBB /* MissionPresenter.swift */,
+				D9BCD20A2275F5210095ADBB /* MissionsInteractorImplementation.swift */,
+				D9BCD20B2275F5210095ADBB /* MissionsURLBuilder.swift */,
+			);
+			path = Missions;
+			sourceTree = "<group>";
+		};
 		F204F589226E5ABE00C85091 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				F204F57F226E554E00C85091 /* LaunchCellTableViewCell.swift */,
 				F204F580226E554E00C85091 /* LaunchCellTableViewCell.xib */,
-				F204F587226E5A1800C85091 /* LaunchesCell+ConfigurableCell.swift */,
 				F204F58C226E5B2300C85091 /* LoadingTableViewCell.swift */,
 				F204F58D226E5B2300C85091 /* LoadingTableViewCell.xib */,
 			);
@@ -577,8 +603,10 @@
 				2ABEE6D61F3886D700531205 /* RootRouter.swift in Sources */,
 				D96719DF226504BF007563BE /* LaunchesTableViewController.swift in Sources */,
 				D96719DD22650028007563BE /* RootRouter+Launches.swift in Sources */,
+				D9BCD20D2276189A0095ADBB /* MissionPresenter.swift in Sources */,
 				C90395241FC622D2006F1DC0 /* main.swift in Sources */,
 				D96719E322650630007563BE /* LaunchesInteractorImplementation.swift in Sources */,
+				D9BCD21622761B1F0095ADBB /* MissionsRouter.swift in Sources */,
 				2A1E77371F384BFC006C84D4 /* AppDelegate.swift in Sources */,
 				D9BCD2032275D0BA0095ADBB /* InfiniteCellItemDataSource.swift in Sources */,
 				F204F57C226E4B0E00C85091 /* LaunchesURLBuilder.swift in Sources */,
@@ -588,19 +616,23 @@
 				F204F58E226E5B2300C85091 /* LoadingTableViewCell.swift in Sources */,
 				F204F586226E586C00C85091 /* ConfigurableCell.swift in Sources */,
 				F204F581226E554E00C85091 /* LaunchCellTableViewCell.swift in Sources */,
+				D9BCD21422761A610095ADBB /* MissionTableViewController.swift in Sources */,
 				D9BCD2012275CF840095ADBB /* CellDataSource.swift in Sources */,
 				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
 				F204F58B226E5AEF00C85091 /* LoadingCellItem.swift in Sources */,
 				D96719EC22650A02007563BE /* Launch.swift in Sources */,
+				D9BCD210227618E90095ADBB /* Missions.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsHandler.swift in Sources */,
-				F204F588226E5A1800C85091 /* LaunchesCell+ConfigurableCell.swift in Sources */,
 				D96719EE22650AC2007563BE /* CommonDataService.swift in Sources */,
+				D9BCD213227619550095ADBB /* MissionsURLBuilder.swift in Sources */,
 				D9BCD2052275D1EF0095ADBB /* RawCellData.swift in Sources */,
 				D96719D92264FE78007563BE /* LaunchesRouter.swift in Sources */,
 				D96719EA22650945007563BE /* Launches.swift in Sources */,
 				F204F584226E57AC00C85091 /* Launch+CellItem.swift in Sources */,
 				D9BCD1FF2275CB0B0095ADBB /* Launches+RawCellData.swift in Sources */,
 				D96719E12265051F007563BE /* LaunchesPresenter.swift in Sources */,
+				D9BCD2122276191F0095ADBB /* Mission.swift in Sources */,
+				D9BCD20C227618780095ADBB /* MissionsInteractorImplementation.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkHandler.swift in Sources */,
 				D96719E8226508E3007563BE /* LaunchesDataService.swift in Sources */,
 			);
@@ -755,7 +787,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdAstra/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xfrontend -warn-long-expression-type-checking=500";
 				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
@@ -771,7 +803,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdAstra/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;
@@ -884,7 +916,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AdAstra/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = your.bundle.id;

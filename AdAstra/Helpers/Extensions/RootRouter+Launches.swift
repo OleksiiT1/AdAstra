@@ -11,3 +11,5 @@ import Foundation
 extension RootRouter: LaunchesRouterDelegate {
 
 }
+
+extension RootRouter: MissionsRouterDelegate {}

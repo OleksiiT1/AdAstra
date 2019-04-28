@@ -9,21 +9,21 @@
 import Foundation
 
 
-class LaunchesURLBuilder {
+class MissionURLBuilder {
     
     private var limit = 0
     private var offset = 0
 
     func get() -> String {
-        return "https://launchlibrary.net/1.4/launch/next/\(limit)?offset=\(offset)"
+        return "https://launchlibrary.net/1.4/mission/next/\(limit)?offset=\(offset)"
     }
 
-    func set(limit: Int) -> LaunchesURLBuilder {
+    func set(limit: Int) -> MissionURLBuilder {
         self.limit = limit
         return self
     }
     
-    func set(offset: Int) -> LaunchesURLBuilder {
+    func set(offset: Int) -> MissionURLBuilder {
         self.offset = offset
         return self
     }

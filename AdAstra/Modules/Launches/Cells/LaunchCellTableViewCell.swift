@@ -10,7 +10,7 @@ import UIKit
 
 class LaunchCellTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var mailLabel: UILabel!
+    @IBOutlet fileprivate weak var mailLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,5 +21,16 @@ class LaunchCellTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
+}
+
+extension LaunchCellTableViewCell: ConfigurableCell {
+    func configure(item: CellItem) {
+        if let item = item as? Launch {
+            mailLabel.text = item.name
+        } else if let item = item as? Mission {
+            mailLabel.text = item.name
+        }
+        
+    }
 }

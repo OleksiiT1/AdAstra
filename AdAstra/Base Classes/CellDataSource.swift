@@ -11,5 +11,5 @@ import Foundation
 protocol CellDataSource {
     var count: Int { get }
     func at(_ index: Int) -> CellItem
-    func prefetch(_ indexes:[Int])
+    func prefetch(_ indexes: [Int])
 }

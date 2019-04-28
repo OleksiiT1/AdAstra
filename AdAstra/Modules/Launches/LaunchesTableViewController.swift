@@ -11,7 +11,7 @@ import UIKit
 class LaunchesTableViewController: UITableViewController, LaunchesView {
 
     var presenter: LaunchesPresenter!
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self

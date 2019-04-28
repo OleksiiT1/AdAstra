@@ -8,12 +8,9 @@
 
 import Foundation
 
-protocol LaunchesPresenter: class {
+protocol LaunchesPresenter: class, CellDataSource {
     func viewIsLoaded(_ view: LaunchesView)
     func loaded(launches: Launches)
-    
-    var count: Int { get }
-    func at(_ index: Int) -> CellItem
 }
 
 protocol LaunchesView: class {
@@ -25,56 +22,34 @@ protocol LaunchesInteractor: class {
     func loadLaunches(offset: Int, limit: Int)
 }
 
-
-protocol CellItem {
-    var cellIdentifier: String { get }    
-}
-
-class LaunchesPresenterImplementation: LaunchesPresenter {
+class LaunchesPresenterImplementation: InfiniteCellItemDataSource, LaunchesPresenter {
 
     private weak var view: LaunchesView!
     private var interactor: LaunchesInteractor
-    private var launches: [Launch] = []
     private var isLoading: Bool = false
-    private var didReachedEnd: Bool = false
-    private var offset: Int = 0
-    private var limit: Int = 20
 
     init(interactor: LaunchesInteractor) {
         self.interactor = interactor
+        super.init()
         interactor.presenter = self
     }
 
     func viewIsLoaded(_ view: LaunchesView) {
         self.view = view
-        isLoading = true
-        interactor.loadLaunches(offset: offset, limit: limit)
+        load(offset: 0, limit: 20)
     }
 
     func loaded(launches: Launches) {
-        offset = launches.offset + launches.count
-        if offset >= launches.total {
-            didReachedEnd = true
-        }
-        self.launches.append(contentsOf: launches.launches)
+        append(rawCellData: launches)
         isLoading = false
         view.update()
     }
 
-    var count: Int {
-        if launches.isEmpty {
-            return 0
-        }
-        return launches.count + ( didReachedEnd ? 0 : 1 )
-    }
-
-    func at(_ index: Int) -> CellItem {
-        if index < launches.count {
-            return launches[index]
-        }
+    override func load(offset: Int, limit: Int) {
         if !isLoading {
+            isLoading = true
             interactor.loadLaunches(offset: offset, limit: limit)
         }
-        return LoadingCellItem()
     }
+
 }

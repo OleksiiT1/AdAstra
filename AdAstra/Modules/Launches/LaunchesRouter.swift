@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 class LaunchesRouter {
-    
-    
+
     private weak var delegate: LaunchesRouterDelegate?
     
     init(delegate: LaunchesRouterDelegate) {
@@ -23,6 +22,5 @@ class LaunchesRouter {
         let interactor = LaunchesInteractorImplementation()
         controller.presenter = LaunchesPresenterImplementation(interactor: interactor)
         return UINavigationController(rootViewController: controller)
-    }
-    
+    }    
 }

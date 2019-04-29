@@ -12,6 +12,7 @@ import UIKit
 class LaunchesRouter {
 
     private weak var delegate: LaunchesRouterDelegate?
+    private var navigation: UINavigationController?
     
     init(delegate: LaunchesRouterDelegate) {
         self.delegate = delegate
@@ -21,10 +22,17 @@ class LaunchesRouter {
         let controller = LaunchesTableViewController()
         let interactor = LaunchesInteractorImplementation()
         controller.presenter = LaunchesPresenterImplementation(interactor: interactor, router: self)
+        controller.dataSource = controller.presenter
         let navigationController = UINavigationController(rootViewController: controller)
         navigationController.tabBarItem = UITabBarItem(title: "Launches", image: nil, tag: 0)
         controller.title = "Launches"
         navigationController.navigationBar.prefersLargeTitles = true
+        self.navigation = navigationController
         return navigationController
-    }    
+    }
+
+    func show(launch id: Int) {
+        let nextRouter = LaunchRouter(id: id)
+        navigation?.pushViewController(nextRouter.rootController(), animated: true)
+    }
 }

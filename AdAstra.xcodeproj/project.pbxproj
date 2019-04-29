@@ -43,6 +43,12 @@
 		D9BCD213227619550095ADBB /* MissionsURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD20B2275F5210095ADBB /* MissionsURLBuilder.swift */; };
 		D9BCD21422761A610095ADBB /* MissionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD2072275F5200095ADBB /* MissionTableViewController.swift */; };
 		D9BCD21622761B1F0095ADBB /* MissionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD21522761B1F0095ADBB /* MissionsRouter.swift */; };
+		D9BCD21B22762BC90095ADBB /* LaunchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD21A22762BC90095ADBB /* LaunchRouter.swift */; };
+		D9BCD21D22762D360095ADBB /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD21C22762D360095ADBB /* LaunchTableViewController.swift */; };
+		D9BCD21F22762DC90095ADBB /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD21E22762DC90095ADBB /* LaunchPresenter.swift */; };
+		D9BCD22122762E0E0095ADBB /* LaunchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD22022762E0E0095ADBB /* LaunchInteractor.swift */; };
+		D9BCD22322762EE30095ADBB /* LaunchURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD22222762EE30095ADBB /* LaunchURLBuilder.swift */; };
+		D9BCD22522776A8D0095ADBB /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCD22422776A8D0095ADBB /* BaseTableViewController.swift */; };
 		F204F57C226E4B0E00C85091 /* LaunchesURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F57B226E4B0E00C85091 /* LaunchesURLBuilder.swift */; };
 		F204F581226E554E00C85091 /* LaunchCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204F57F226E554E00C85091 /* LaunchCellTableViewCell.swift */; };
 		F204F582226E554E00C85091 /* LaunchCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F204F580226E554E00C85091 /* LaunchCellTableViewCell.xib */; };
@@ -112,6 +118,12 @@
 		D9BCD20F227618E90095ADBB /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
 		D9BCD2112276191F0095ADBB /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		D9BCD21522761B1F0095ADBB /* MissionsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionsRouter.swift; sourceTree = "<group>"; };
+		D9BCD21A22762BC90095ADBB /* LaunchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRouter.swift; sourceTree = "<group>"; };
+		D9BCD21C22762D360095ADBB /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
+		D9BCD21E22762DC90095ADBB /* LaunchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
+		D9BCD22022762E0E0095ADBB /* LaunchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; };
+		D9BCD22222762EE30095ADBB /* LaunchURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchURLBuilder.swift; sourceTree = "<group>"; };
+		D9BCD22422776A8D0095ADBB /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		F204F57B226E4B0E00C85091 /* LaunchesURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesURLBuilder.swift; sourceTree = "<group>"; };
 		F204F57F226E554E00C85091 /* LaunchCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellTableViewCell.swift; sourceTree = "<group>"; };
 		F204F580226E554E00C85091 /* LaunchCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -226,6 +238,7 @@
 		2AB31D9F1F38741400B7D1F3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D9BCD21922762BB10095ADBB /* Launch */,
 				D9BCD2062275F4FB0095ADBB /* Missions */,
 				D96719D72264FDCB007563BE /* Launches */,
 				2A1DD4E21F38A09700712195 /* Launch */,
@@ -363,6 +376,7 @@
 				D9BCD2002275CF840095ADBB /* CellDataSource.swift */,
 				D9BCD2022275D0BA0095ADBB /* InfiniteCellItemDataSource.swift */,
 				D9BCD2042275D1EF0095ADBB /* RawCellData.swift */,
+				D9BCD22422776A8D0095ADBB /* BaseTableViewController.swift */,
 			);
 			path = "Base Classes";
 			sourceTree = "<group>";
@@ -377,6 +391,19 @@
 				D9BCD20B2275F5210095ADBB /* MissionsURLBuilder.swift */,
 			);
 			path = Missions;
+			sourceTree = "<group>";
+		};
+		D9BCD21922762BB10095ADBB /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				D9BCD21A22762BC90095ADBB /* LaunchRouter.swift */,
+				D9BCD21C22762D360095ADBB /* LaunchTableViewController.swift */,
+				D9BCD21E22762DC90095ADBB /* LaunchPresenter.swift */,
+				D9BCD22022762E0E0095ADBB /* LaunchInteractor.swift */,
+				D9BCD22222762EE30095ADBB /* LaunchURLBuilder.swift */,
+			);
+			name = Launch;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F204F589226E5ABE00C85091 /* Cells */ = {
@@ -611,15 +638,19 @@
 				D9BCD2032275D0BA0095ADBB /* InfiniteCellItemDataSource.swift in Sources */,
 				F204F57C226E4B0E00C85091 /* LaunchesURLBuilder.swift in Sources */,
 				D9BCD1FD227598540095ADBB /* CellItem.swift in Sources */,
+				D9BCD21D22762D360095ADBB /* LaunchTableViewController.swift in Sources */,
 				D96719DB2264FEA7007563BE /* LaunchesRouterDelegate.swift in Sources */,
 				553FC23C214047CB001D9362 /* R.generated.swift in Sources */,
 				F204F58E226E5B2300C85091 /* LoadingTableViewCell.swift in Sources */,
 				F204F586226E586C00C85091 /* ConfigurableCell.swift in Sources */,
 				F204F581226E554E00C85091 /* LaunchCellTableViewCell.swift in Sources */,
 				D9BCD21422761A610095ADBB /* MissionTableViewController.swift in Sources */,
+				D9BCD21B22762BC90095ADBB /* LaunchRouter.swift in Sources */,
 				D9BCD2012275CF840095ADBB /* CellDataSource.swift in Sources */,
 				C90395271FC62425006F1DC0 /* TestsAppDelegate.swift in Sources */,
 				F204F58B226E5AEF00C85091 /* LoadingCellItem.swift in Sources */,
+				D9BCD22322762EE30095ADBB /* LaunchURLBuilder.swift in Sources */,
+				D9BCD22522776A8D0095ADBB /* BaseTableViewController.swift in Sources */,
 				D96719EC22650A02007563BE /* Launch.swift in Sources */,
 				D9BCD210227618E90095ADBB /* Missions.swift in Sources */,
 				2A1DD4E11F389E2100712195 /* NotificationsHandler.swift in Sources */,
@@ -630,11 +661,13 @@
 				D96719EA22650945007563BE /* Launches.swift in Sources */,
 				F204F584226E57AC00C85091 /* Launch+CellItem.swift in Sources */,
 				D9BCD1FF2275CB0B0095ADBB /* Launches+RawCellData.swift in Sources */,
+				D9BCD21F22762DC90095ADBB /* LaunchPresenter.swift in Sources */,
 				D96719E12265051F007563BE /* LaunchesPresenter.swift in Sources */,
 				D9BCD2122276191F0095ADBB /* Mission.swift in Sources */,
 				D9BCD20C227618780095ADBB /* MissionsInteractorImplementation.swift in Sources */,
 				2A1DD4DF1F389C2200712195 /* DeeplinkHandler.swift in Sources */,
 				D96719E8226508E3007563BE /* LaunchesDataService.swift in Sources */,
+				D9BCD22122762E0E0095ADBB /* LaunchInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

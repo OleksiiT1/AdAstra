@@ -21,7 +21,7 @@ class LaunchInteractorImplementation: LaunchInteractor {
             guard let launch = launches.launches.first else {
                 return
             }
-            self?.presenter.loaded(launch: launch)
+             self?.presenter.loaded(launch: launch)
         }
     }
 }

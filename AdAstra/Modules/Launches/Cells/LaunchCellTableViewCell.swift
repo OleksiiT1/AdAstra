@@ -30,6 +30,8 @@ extension LaunchCellTableViewCell: ConfigurableCell {
             mailLabel.text = item.name
         } else if let item = item as? Mission {
             mailLabel.text = item.name
+        } else if let item = item as? String {
+            mailLabel.text = item
         }
         
     }

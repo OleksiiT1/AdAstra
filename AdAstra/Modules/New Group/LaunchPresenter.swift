@@ -6,7 +6,6 @@
 //  Copyright © 2019 ovt. All rights reserved.
 //
 
-
 import Foundation
 
 protocol LaunchPresenter: class, CellDataSource {
@@ -23,19 +22,21 @@ protocol LaunchInteractor: class {
     func loadLaunch(id: Int)
 }
 
-class LaunchPresenterImplementation: InfiniteCellItemDataSource, LaunchPresenter {
+class LaunchPresenterImplementation: CellDataSource, LaunchPresenter {
 
+    
+    private var model: Codable?
     private weak var view: LaunchView!
     private var router: LaunchRouter
     private var interactor: LaunchInteractor
     private var isLoading: Bool = false
     private var id: Int
-
+    private var keys: [String] = ["id", "name"]
+    
     init(id: Int, interactor: LaunchInteractor, router: LaunchRouter) {
         self.id = id
         self.interactor = interactor
         self.router = router
-        super.init()
         interactor.presenter = self
     }
 
@@ -45,16 +46,45 @@ class LaunchPresenterImplementation: InfiniteCellItemDataSource, LaunchPresenter
     }
 
     func loaded(launch: Launch) {
-//        append(rawCellData: launches)
         isLoading = false
+        model = launch
         view.update()
     }
 
-    override func load(offset: Int, limit: Int) {
-        if !isLoading {
-            isLoading = true
-            interactor.loadLaunch(id: id)
-        }
+    func load() {
+        isLoading = true
+        interactor.loadLaunch(id: id)
     }
     
+    var count: Int {
+        return model == nil ? 0 : keys.count
+    }
+    
+    func at(_ index: Int) -> CellItem {
+        if index < keys.count {
+            return (model?[keys[index]] as? String) ?? "N/A"
+        }
+        return "N/A"
+    }
+    
+    func prefetch(_ indexes: [Int]) {}
+}
+
+extension String: CellItem {
+    var cellIdentifier: String {
+        return R.nib.launchCellTableViewCell.identifier
+    }
+}
+
+struct JSON {
+    static let encoder = JSONEncoder()
+}
+
+extension Encodable {
+    subscript(key: String) -> Any? {
+        return asDictionary[key]
+    }
+    var asDictionary: [String: Any] {
+        return (try? JSONSerialization.jsonObject(with: JSON.encoder.encode(self))) as? [String: Any] ?? [:]
+    }
 }

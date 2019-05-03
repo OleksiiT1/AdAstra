@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LaunchCellTableViewCell: UITableViewCell {
+class OneLabelTableCell: UITableViewCell {
 
     @IBOutlet fileprivate weak var mailLabel: UILabel!
     override func awakeFromNib() {
@@ -24,15 +24,10 @@ class LaunchCellTableViewCell: UITableViewCell {
 
 }
 
-extension LaunchCellTableViewCell: ConfigurableCell {
+extension OneLabelTableCell: ConfigurableCell {
     func configure(item: CellItem) {
-        if let item = item as? Launch {
+        if let item = item as? TextCellItem {
             mailLabel.text = item.name
-        } else if let item = item as? Mission {
-            mailLabel.text = item.name
-        } else if let item = item as? String {
-            mailLabel.text = item
         }
-        
     }
 }

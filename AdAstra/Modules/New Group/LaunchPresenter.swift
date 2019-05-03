@@ -22,21 +22,26 @@ protocol LaunchInteractor: class {
     func loadLaunch(id: Int)
 }
 
-class LaunchPresenterImplementation: CellDataSource, LaunchPresenter {
+class LaunchPresenterImplementation: DictionaryCellItemDataSource, LaunchPresenter {
 
-    
-    private var model: Codable?
     private weak var view: LaunchView!
     private var router: LaunchRouter
     private var interactor: LaunchInteractor
     private var isLoading: Bool = false
     private var id: Int
-    private var keys: [String] = ["id", "name"]
+    override var keys: [CellItemDecoder] {
+        return [.string("id"),
+         .string("name"),
+         .date("net", "MMMM dd, yyyy HH:mm:ss zzz"),
+         .urls("infoURLs")
+        ]
+    }
     
     init(id: Int, interactor: LaunchInteractor, router: LaunchRouter) {
         self.id = id
         self.interactor = interactor
         self.router = router
+        super.init()
         interactor.presenter = self
     }
 
@@ -47,44 +52,12 @@ class LaunchPresenterImplementation: CellDataSource, LaunchPresenter {
 
     func loaded(launch: Launch) {
         isLoading = false
-        model = launch
+        set(model: launch)
         view.update()
     }
 
     func load() {
         isLoading = true
         interactor.loadLaunch(id: id)
-    }
-    
-    var count: Int {
-        return model == nil ? 0 : keys.count
-    }
-    
-    func at(_ index: Int) -> CellItem {
-        if index < keys.count {
-            return (model?[keys[index]] as? String) ?? "N/A"
-        }
-        return "N/A"
-    }
-    
-    func prefetch(_ indexes: [Int]) {}
-}
-
-extension String: CellItem {
-    var cellIdentifier: String {
-        return R.nib.launchCellTableViewCell.identifier
-    }
-}
-
-struct JSON {
-    static let encoder = JSONEncoder()
-}
-
-extension Encodable {
-    subscript(key: String) -> Any? {
-        return asDictionary[key]
-    }
-    var asDictionary: [String: Any] {
-        return (try? JSONSerialization.jsonObject(with: JSON.encoder.encode(self))) as? [String: Any] ?? [:]
     }
 }

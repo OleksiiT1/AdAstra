@@ -10,6 +10,7 @@ import Foundation
 
 protocol LaunchesPresenter: class, CellDataSource {
     func viewIsLoaded(_ view: LaunchesView)
+    func selected(index: Int)
     func loaded(launches: Launches)
 }
 
@@ -54,4 +55,9 @@ class LaunchesPresenterImplementation: InfiniteCellItemDataSource, LaunchesPrese
         }
     }
 
+    func selected(index: Int) {
+        guard let item = super.at(index) as? Launch else { return }
+        router.show(launch: item.id)
+    }
+    
 }

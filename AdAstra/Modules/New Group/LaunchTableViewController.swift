@@ -1,22 +1,23 @@
 //
-//  MissionTableViewController.swift
+//  LaunchTableViewController.swift
 //  AdAstra
 //
-//  Created by Aleksey Tyurenkov on 4/15/19.
+//  Created by Aleksey Tyurenkov on 4/28/19.
 //  Copyright © 2019 ovt. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class MissionTableViewController: BaseTableViewController, MissionView {
-
-    var presenter: MissionPresenter!
+class LaunchTableViewController: BaseTableViewController, LaunchView {
+    
+    var presenter: LaunchPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewIsLoaded(self)
     }
-
+    
     override func registerCells() {
         tableView.register(R.nib.launchCellTableViewCell)
         tableView.register(R.nib.loadingTableViewCell)

@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class InfiniteCellItemDataSource: CellDataSource {
     private var items: [CellItem] = []
     private var didReachedEnd: Bool = false
@@ -26,7 +25,9 @@ class InfiniteCellItemDataSource: CellDataSource {
         if index < items.count {
             return items[index]
         }
-        load(offset: offset, limit: limit)
+        if !didReachedEnd {
+            load(offset: offset, limit: limit)
+        }
         return LoadingCellItem()
     }
 
@@ -38,10 +39,9 @@ class InfiniteCellItemDataSource: CellDataSource {
         items.append(contentsOf: rawCellData.content)
     }
 
-    func prefetch(_ indexes: [Int]) {
-
-    }
-
+    func prefetch(_ indexes: [Int]) {}
     func load(offset: Int, limit: Int) {}
-
+    func load() {
+        load(offset: offset, limit: limit)
+    }
 }

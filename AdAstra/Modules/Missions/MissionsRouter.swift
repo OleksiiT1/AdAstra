@@ -21,6 +21,7 @@ class MissionsRouter {
         let controller = MissionTableViewController()
         let interactor = MissionInteractorImplementation()
         controller.presenter = MissionPresenterImplementation(interactor: interactor, router: self)
+        controller.dataSource = controller.presenter
         let navigationController = UINavigationController(rootViewController: controller)
         navigationController.tabBarItem = UITabBarItem(title: "Missions", image: nil, tag: 0)
         controller.title = "Missions"

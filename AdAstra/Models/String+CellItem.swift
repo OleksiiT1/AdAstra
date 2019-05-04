@@ -1,18 +1,20 @@
 //
-//  Launch+CellItem.swift
+//  String+CellItem.swift
 //  AdAstra
 //
-//  Created by Oleksii Tiurenkov on 4/22/19.
+//  Created by Oleksii Tiurenkov on 5/3/19.
 //  Copyright © 2019 ovt. All rights reserved.
 //
 
 import Foundation
 
-
-extension Launch: CellItem {
+extension String: CellItem, TextCellItem {
     var cellIdentifier: String {
         return R.nib.oneLabelTableCell.identifier
     }
+    
+    var name: String {
+        return self 
+    }
+    
 }
-
-extension Launch: TextCellItem {}

@@ -17,6 +17,10 @@ struct Mission: Codable {
 
 extension Mission: CellItem {
     var cellIdentifier: String {
-        return R.nib.launchCellTableViewCell.identifier
+        return R.nib.oneLabelTableCell.identifier
     }    
+}
+
+extension Mission: TextCellItem {
+    
 }

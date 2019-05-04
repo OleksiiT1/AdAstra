@@ -18,7 +18,7 @@ class MissionTableViewController: BaseTableViewController, MissionView {
     }
 
     override func registerCells() {
-        tableView.register(R.nib.launchCellTableViewCell)
+        tableView.register(R.nib.oneLabelTableCell)
         tableView.register(R.nib.loadingTableViewCell)
     }
 }

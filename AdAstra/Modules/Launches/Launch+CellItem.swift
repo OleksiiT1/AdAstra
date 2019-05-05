@@ -15,3 +15,10 @@ extension Launch: CellItem {
 }
 
 extension Launch: TextCellItem {}
+
+extension Launch: TwoLinesItem {
+    var subtile: String {
+        
+        return 
+    }
+}

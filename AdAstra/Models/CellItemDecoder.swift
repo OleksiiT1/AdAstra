@@ -27,14 +27,18 @@ enum CellItemDecoder {
 
 struct StringDecoder {
     static func get(_ key: String, from object: Codable) -> String? {
-        guard let string: String = object.extract(key: key) else { return nil }
+        guard let string: String = object.extract(key: key) else {
+            return nil
+        }
         return string
     }
 }
 
 struct DateDecoder {
     static func get(_ key: String, format: String, from object: Codable) -> Date? {
-        guard let string: String = StringDecoder.get(key, from: object) else { return nil }
+        guard let string: String = StringDecoder.get(key, from: object) else {
+            return nil
+        }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.date(from: string)
@@ -43,14 +47,18 @@ struct DateDecoder {
 
 struct StringArrayDecoder {
     static func get(_ key: String, from object: Codable) -> [String] {
-        guard let strings: [String] = object.extract(key: key) else { return [] }
+        guard let strings: [String] = object.extract(key: key) else {
+            return []
+        }
         return strings
     }
 }
 
 struct URLsDecoder {
     static func get(_ key: String, from object: Codable) -> [URL] {
-        guard let strings: [String] = object.extract(key: key) else { return [] }
+        guard let strings: [String] = object.extract(key: key) else {
+            return []
+        }
         return strings.compactMap { URL(string: $0) }
     }
 }

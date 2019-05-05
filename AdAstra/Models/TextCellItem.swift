@@ -11,3 +11,7 @@ import Foundation
 protocol TextCellItem {
     var name: String { get }
 }
+
+protocol TwoLinesItem: TextCellItem {
+    var subtile: String { get }
+}

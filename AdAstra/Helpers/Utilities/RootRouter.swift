@@ -30,7 +30,10 @@ class RootRouter {
     func loadMainAppStructure() {
         // Customize your app structure here
         let controller = UITabBarController()
-        controller.setViewControllers([launchesRouter.rootController(), missionsRouter.rootController()], animated: true)
+        controller.setViewControllers(
+            [launchesRouter.rootController(),
+             missionsRouter.rootController()],
+            animated: true)
 
         setRootViewController(controller: controller, animatedWithOptions: nil)
     }

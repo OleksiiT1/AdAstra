@@ -20,6 +20,7 @@ class LaunchesTableViewController: BaseTableViewController, LaunchesView {
     // MARK: - Table view data source
     override func registerCells() {
         tableView.register(R.nib.oneLabelTableCell)
+        tableView.register(R.nib.twoLinedTableViewCell)
         tableView.register(R.nib.loadingTableViewCell)
     }
 

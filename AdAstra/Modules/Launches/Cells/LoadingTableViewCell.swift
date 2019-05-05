@@ -26,4 +26,8 @@ class LoadingTableViewCell: UITableViewCell, ConfigurableCell {
         super.prepareForReuse()
         indicator.startAnimating()
     }
+    
+    func configure(item: CellItem) {
+        indicator.startAnimating()
+    }
 }

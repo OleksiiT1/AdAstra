@@ -36,7 +36,7 @@ class LaunchPresenterImplementation: DictionaryCellItemDataSource, LaunchPresent
          .urls("infoURLs")
         ]
     }
-    
+
     init(id: Int, interactor: LaunchInteractor, router: LaunchRouter) {
         self.id = id
         self.interactor = interactor

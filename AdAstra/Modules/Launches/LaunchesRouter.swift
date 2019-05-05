@@ -13,7 +13,7 @@ class LaunchesRouter {
 
     private weak var delegate: LaunchesRouterDelegate?
     private var navigation: UINavigationController?
-    
+
     init(delegate: LaunchesRouterDelegate) {
         self.delegate = delegate
     }

@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 extension Array: CellItem where Element == URL {
     var cellIdentifier: String {
         return R.nib.oneLabelTableCell.identifier
@@ -20,4 +19,3 @@ extension Array: TextCellItem where Element == URL {
         return "Items"
     }
 }
-

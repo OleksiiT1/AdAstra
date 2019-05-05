@@ -12,9 +12,9 @@ extension String: CellItem, TextCellItem {
     var cellIdentifier: String {
         return R.nib.oneLabelTableCell.identifier
     }
-    
+
     var name: String {
-        return self 
+        return self
     }
-    
+
 }

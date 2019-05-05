@@ -8,9 +8,8 @@
 
 import Foundation
 
-
 class LaunchesURLBuilder {
-    
+
     private var limit = 0
     private var offset = 0
 
@@ -22,7 +21,7 @@ class LaunchesURLBuilder {
         self.limit = limit
         return self
     }
-    
+
     func set(offset: Int) -> LaunchesURLBuilder {
         self.offset = offset
         return self

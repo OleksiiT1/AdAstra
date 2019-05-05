@@ -9,14 +9,13 @@
 import Foundation
 
 class LaunchURLBuilder {
-    
+
     private var id = 0
 
-    
     func get() -> String {
         return "https://launchlibrary.net/1.4/launch/\(id)"
     }
-    
+
     func set(id: Int) -> LaunchURLBuilder {
         self.id = id
         return self

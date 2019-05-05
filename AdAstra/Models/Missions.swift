@@ -8,13 +8,12 @@
 
 import Foundation
 
-
 struct Missions: Codable {
     var total: Int
     var offset: Int
     var count: Int
     var missions: [Mission]
-    
+
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         total = try values.decode(Int.self, forKey: .total)
@@ -28,7 +27,6 @@ struct Missions: Codable {
         missions = try values.decode([Mission].self, forKey: .missions)
     }
 }
-
 
 extension Missions: RawCellData {
     var content: [CellItem] {

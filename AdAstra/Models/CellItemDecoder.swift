@@ -12,8 +12,7 @@ enum CellItemDecoder {
     case string(String)
     case date(String, String)
     case urls(String)
-    
-    
+
     func getCellItem(from model: Codable) -> CellItem? {
         switch self {
         case .string(let key):
@@ -26,7 +25,6 @@ enum CellItemDecoder {
     }
 }
 
-
 struct StringDecoder {
     static func get(_ key: String, from object: Codable) -> String? {
         guard let string: String = object.extract(key: key) else { return nil }
@@ -35,14 +33,13 @@ struct StringDecoder {
 }
 
 struct DateDecoder {
-    static func get(_ key: String, format:String, from object: Codable) -> Date? {
+    static func get(_ key: String, format: String, from object: Codable) -> Date? {
         guard let string: String = StringDecoder.get(key, from: object) else { return nil }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.date(from: string)
     }
 }
-
 
 struct StringArrayDecoder {
     static func get(_ key: String, from object: Codable) -> [String] {
@@ -54,6 +51,6 @@ struct StringArrayDecoder {
 struct URLsDecoder {
     static func get(_ key: String, from object: Codable) -> [URL] {
         guard let strings: [String] = object.extract(key: key) else { return [] }
-        return strings.compactMap{ URL.init(string: $0) }
+        return strings.compactMap { URL(string: $0) }
     }
 }

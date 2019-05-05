@@ -21,7 +21,7 @@ class LoadingTableViewCell: UITableViewCell, ConfigurableCell {
 
         // Configure the view for the selected state
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         indicator.startAnimating()

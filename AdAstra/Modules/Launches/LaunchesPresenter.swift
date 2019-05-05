@@ -61,5 +61,5 @@ class LaunchesPresenterImplementation: InfiniteCellItemDataSource, LaunchesPrese
         }
         router.show(launch: item.id)
     }
-    
+
 }

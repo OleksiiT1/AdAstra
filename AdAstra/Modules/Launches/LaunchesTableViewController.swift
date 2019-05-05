@@ -11,7 +11,7 @@ import UIKit
 class LaunchesTableViewController: BaseTableViewController, LaunchesView {
 
     var presenter: LaunchesPresenter!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewIsLoaded(self)
@@ -22,7 +22,6 @@ class LaunchesTableViewController: BaseTableViewController, LaunchesView {
         tableView.register(R.nib.oneLabelTableCell)
         tableView.register(R.nib.loadingTableViewCell)
     }
-
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

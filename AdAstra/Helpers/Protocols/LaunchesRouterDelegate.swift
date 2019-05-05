@@ -13,6 +13,5 @@ protocol LaunchesRouterDelegate: class {
 }
 
 protocol MissionsRouterDelegate: class {
-    
-}
 
+}

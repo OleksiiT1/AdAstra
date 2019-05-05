@@ -19,7 +19,7 @@ extension Encodable {
     var asDictionary: [String: Any] {
         return (try? JSONSerialization.jsonObject(with: JSON.encoder.encode(self))) as? [String: Any] ?? [:]
     }
-    
+
     func extract<T>(key: String) -> T? {
         return self[key] as? T
     }

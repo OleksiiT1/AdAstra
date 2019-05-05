@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 extension Date: CellItem {
     var cellIdentifier: String {
         return R.nib.oneLabelTableCell.identifier

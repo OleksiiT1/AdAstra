@@ -9,11 +9,10 @@
 import Foundation
 
 protocol LaunchesDataService {
-    
+
     func fetch()
 }
 
 class LaunchesDataServiceImpementation {
-    
-    
+
 }

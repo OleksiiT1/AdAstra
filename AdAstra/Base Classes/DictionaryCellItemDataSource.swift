@@ -8,17 +8,16 @@
 
 import Foundation
 
-
 class DictionaryCellItemDataSource: CellDataSource {
     private var model: Codable?
     var keys: [CellItemDecoder] {
         return [CellItemDecoder]()
     }
-    
+
     var count: Int {
         return model == nil ? 0 : keys.count
     }
-    
+
     func at(_ index: Int) -> CellItem {
         guard index < keys.count else {
             return "N/A"
@@ -31,7 +30,7 @@ class DictionaryCellItemDataSource: CellDataSource {
     }
 
     func prefetch(_ indexes: [Int]) {}
-    
+
     func set(model: Codable) {
         self.model = model
     }

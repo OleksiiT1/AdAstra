@@ -11,7 +11,7 @@ class RootRouter {
 
     private lazy var  launchesRouter: LaunchesRouter = { return LaunchesRouter(delegate: self) }()
     private lazy var  missionsRouter: MissionsRouter = { return MissionsRouter(delegate: self) }()
-    
+
     /** Replaces root view controller. You can specify the replacment animation type.
      If no animation type is specified, there is no animation */
     func setRootViewController(controller: UIViewController, animatedWithOptions: UIView.AnimationOptions?) {

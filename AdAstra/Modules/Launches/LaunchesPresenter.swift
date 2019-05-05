@@ -29,7 +29,7 @@ class LaunchesPresenterImplementation: InfiniteCellItemDataSource, LaunchesPrese
     private var router: LaunchesRouter
     private var interactor: LaunchesInteractor
     private var isLoading: Bool = false
-
+    
     init(interactor: LaunchesInteractor, router: LaunchesRouter) {
         self.interactor = interactor
         self.router = router
@@ -56,7 +56,7 @@ class LaunchesPresenterImplementation: InfiniteCellItemDataSource, LaunchesPrese
     }
 
     func selected(index: Int) {
-        guard let item = super.at(index) as? Launch else {
+        guard let item = super.at(index).value as? Launch else {
             return
         }
         router.show(launch: item.id)

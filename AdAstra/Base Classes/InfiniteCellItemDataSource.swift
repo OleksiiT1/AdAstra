@@ -28,7 +28,7 @@ class InfiniteCellItemDataSource: CellDataSource {
         if !didReachedEnd {
             load(offset: offset, limit: limit)
         }
-        return LoadingCellItem()
+        return .loading
     }
 
     func append(rawCellData: RawCellData) {

@@ -21,7 +21,7 @@ class DictionaryCellItemDataSource: CellDataSource {
 
     func at(_ index: Int) -> CellItem {
         guard index < items.count else {
-            return "N/A"
+            return .oneLine("N/A")
         }
         return items[index]
     }
@@ -31,16 +31,9 @@ class DictionaryCellItemDataSource: CellDataSource {
     func set(model: Codable) {
         self.model = model
         for key in keys {
-            let item = key.getCellItem(from: model) ?? "N/A"
-            if let item = item as? [Any] {
-                for subitem in item {
-                    if let cellItem = subitem as? CellItem {
-                        items.append(cellItem)
-                    }
-                }
-            } else {
-                items.append(item)
-            }
+            let items = key.getCellItem(from: model)
+            self.items.append(contentsOf: items)
         }
+        
     }
 }

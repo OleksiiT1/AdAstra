@@ -25,7 +25,7 @@ class TwoLinedTableViewCell: UITableViewCell, ConfigurableCell {
     }
 
     func configure(item: CellItem) {
-        if let item = item as? TwoLinesItem {
+        if case let .twoLines(item) = item {
             nameLabel.text = item.name
             secondaryLabel.text = item.subtile
         }

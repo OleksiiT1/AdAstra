@@ -15,11 +15,11 @@ struct Mission: Codable {
     //    var lsp: String
 }
 
-extension Mission: CellItem {
-    var cellIdentifier: String {
-        return R.nib.oneLabelTableCell.identifier
-    }
-}
+//extension Mission: CellItem {
+//    var cellIdentifier: String {
+//        return R.nib.oneLabelTableCell.identifier
+//    }
+//}
 
 extension Mission: TextCellItem {
 

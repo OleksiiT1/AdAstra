@@ -26,8 +26,8 @@ class OneLabelTableCell: UITableViewCell {
 
 extension OneLabelTableCell: ConfigurableCell {
     func configure(item: CellItem) {
-        if let item = item as? TextCellItem {
-            mailLabel.text = item.name
+        if case let .oneLine(line) = item {
+            mailLabel.text = line.name
         }
     }
 }

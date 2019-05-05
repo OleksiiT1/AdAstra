@@ -10,6 +10,6 @@ import Foundation
 
 extension Launches: RawCellData {
     var content: [CellItem] {
-        return launches.map { CellItem.twoLines($0)}
+        return launches.map { CellItem.twoLines($0) }
     }
 }

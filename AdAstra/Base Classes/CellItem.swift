@@ -8,11 +8,11 @@
 
 import Foundation
 enum CellItem {
-    
+
     case loading
     case oneLine(TextCellItem)
     case twoLines(TwoLinesItem)
-    
+
     var cellIdentifier: String {
         switch self {
         case .oneLine:
@@ -23,7 +23,7 @@ enum CellItem {
             return R.nib.loadingTableViewCell.identifier
         }
     }
-    
+
     var value: Any? {
         switch self {
         case .oneLine(let item):
@@ -34,5 +34,5 @@ enum CellItem {
             return nil
         }
     }
-    
+
 }

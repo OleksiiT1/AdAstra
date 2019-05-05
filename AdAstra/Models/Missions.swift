@@ -30,6 +30,6 @@ struct Missions: Codable {
 
 extension Missions: RawCellData {
     var content: [CellItem] {
-        return missions.map { CellItem.oneLine($0)}
+        return missions.map { CellItem.oneLine($0) }
     }
 }

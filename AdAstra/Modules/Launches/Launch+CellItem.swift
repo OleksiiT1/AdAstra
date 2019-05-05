@@ -18,7 +18,7 @@ extension Launch: TextCellItem {}
 
 extension Launch: TwoLinesItem {
     var subtile: String {
-        
+
         return net
     }
 }

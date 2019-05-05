@@ -10,10 +10,9 @@ import UIKit
 
 class TwoLinedTableViewCell: UITableViewCell, ConfigurableCell {
 
-    
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var secondaryLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,12 +23,12 @@ class TwoLinedTableViewCell: UITableViewCell, ConfigurableCell {
 
         // Configure the view for the selected state
     }
-    
+
     func configure(item: CellItem) {
         if let item = item as? TwoLinesItem {
             nameLabel.text = item.name
             secondaryLabel.text = item.subtile
         }
     }
-    
+
 }

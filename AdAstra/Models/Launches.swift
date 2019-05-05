@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Launches: Codable {
     var total: Int
     var offset: Int

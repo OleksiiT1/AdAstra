@@ -9,13 +9,12 @@
 import Foundation
 
 class MissionInteractorImplementation: MissionInteractor {
-    
+
     let queryBuilder = MissionURLBuilder()
 
-    
     func loadMission(offset: Int, limit: Int) {
         _ = queryBuilder.set(offset: offset).set(limit: limit)
-        CommonDataService.get(link:queryBuilder.get()) { [weak self](mission: Missions?, error) in
+        CommonDataService.get(link: queryBuilder.get()) { [weak self](mission: Missions?, _) in
             guard let mission = mission else {
                 return
             }

@@ -1,16 +1,18 @@
 //
-//  LaunchCellTableViewCell.swift
+//  TwoLinedTableViewCell.swift
 //  AdAstra
 //
-//  Created by Oleksii Tiurenkov on 4/22/19.
+//  Created by Oleksii Tiurenkov on 5/5/19.
 //  Copyright © 2019 ovt. All rights reserved.
 //
 
 import UIKit
 
-class OneLabelTableCell: UITableViewCell {
+class TwoLinedTableViewCell: UITableViewCell, ConfigurableCell {
 
-    @IBOutlet fileprivate weak var mailLabel: UILabel!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var secondaryLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,12 +24,11 @@ class OneLabelTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-}
-
-extension OneLabelTableCell: ConfigurableCell {
     func configure(item: CellItem) {
-        if case let .oneLine(line) = item {
-            mailLabel.text = line.name
+        if case let .twoLines(item) = item {
+            nameLabel.text = item.name
+            secondaryLabel.text = item.subtile
         }
     }
+
 }

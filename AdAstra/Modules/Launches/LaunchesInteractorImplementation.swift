@@ -9,13 +9,12 @@
 import Foundation
 
 class LaunchesInteractorImplementation: LaunchesInteractor {
-    
+
     let queryBuilder = LaunchesURLBuilder()
 
-    
     func loadLaunches(offset: Int, limit: Int) {
         _ = queryBuilder.set(offset: offset).set(limit: limit)
-        CommonDataService.get(link:queryBuilder.get()) { [weak self](launches: Launches?, error) in
+        CommonDataService.get(link: queryBuilder.get()) { [weak self](launches: Launches?, _) in
             guard let launches = launches else {
                 return
             }

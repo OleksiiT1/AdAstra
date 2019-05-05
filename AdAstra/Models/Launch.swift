@@ -12,5 +12,10 @@ struct Launch: Codable {
     var id: Int
     var name: String
     var net: String
+    var infoURLs: [String]
 //    var lsp: String
+
+    var launchDate: Date? {
+        return DateDecoder.get("net", format: "MMMM dd, yyyy HH:mm:ss zzz", from: self)
+    }
 }

@@ -11,10 +11,10 @@ import Foundation
 class LaunchInteractorImplementation: LaunchInteractor {
     weak var presenter: LaunchPresenter!
     let queryBuilder = LaunchURLBuilder()
-    
+
     func loadLaunch(id: Int) {
         _ = queryBuilder.set(id: id)
-        CommonDataService.get(link: queryBuilder.get()) { [weak self](launches: Launches?, error) in
+        CommonDataService.get(link: queryBuilder.get()) { [weak self](launches: Launches?, _) in
             guard let launches = launches else {
                 return
             }

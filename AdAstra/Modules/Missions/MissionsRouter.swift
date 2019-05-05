@@ -12,7 +12,7 @@ import UIKit
 class MissionsRouter {
 
     private weak var delegate: MissionsRouterDelegate?
-    
+
     init(delegate: MissionsRouterDelegate) {
         self.delegate = delegate
     }

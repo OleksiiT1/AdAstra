@@ -9,51 +9,73 @@
 import Foundation
 
 enum CellItemDecoder {
+    case int(String)
     case string(String)
     case date(String, String)
     case urls(String)
+    case group(String, String)
     
-    
-    func getCellItem(from model: Codable) -> CellItem? {
+    func getCellItem(from model: Codable) -> [CellItem] {
         switch self {
+        case .int(let key):
+            return [CellItem.oneLine(StringDecoder.get(key, from: model))]
         case .string(let key):
-            return StringDecoder.get(key, from: model)
+            return [CellItem.oneLine(StringDecoder.get(key, from: model))]
         case .date(let key, let format):
-            return DateDecoder.get(key, format: format, from: model)
+            if let date = DateDecoder.get(key, format: format, from: model) {
+                return [CellItem.oneLine(date)]
+            }
+            return [CellItem.oneLine("N/A")]
         case .urls(let key):
-            return URLsDecoder.get(key, from: model)
+            return URLsDecoder.get(key, from: model).map { CellItem.oneLine($0)}
+        case .group(let key, let defaultName):
+            return ArrayDecoder.get(key, from: model).isEmpty ? [] : [CellItem.oneLine(defaultName)]
         }
     }
 }
 
-
 struct StringDecoder {
-    static func get(_ key: String, from object: Codable) -> String? {
-        guard let string: String = object.extract(key: key) else { return nil }
-        return string
+    static func get(_ key: String, from object: Codable) -> String {
+        let string: Any? = object.extract(key: key)
+        if let result = string as? Int {
+            return "\(result)"
+        }
+        return (string as? String) ?? "N/A"
     }
 }
 
 struct DateDecoder {
-    static func get(_ key: String, format:String, from object: Codable) -> Date? {
-        guard let string: String = StringDecoder.get(key, from: object) else { return nil }
+    static func get(_ key: String, format: String, from object: Codable) -> Date? {
+        let string: String = StringDecoder.get(key, from: object)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.date(from: string)
     }
 }
 
-
 struct StringArrayDecoder {
     static func get(_ key: String, from object: Codable) -> [String] {
-        guard let strings: [String] = object.extract(key: key) else { return [] }
+        guard let strings: [String] = object.extract(key: key) else {
+            return []
+        }
         return strings
     }
 }
 
 struct URLsDecoder {
     static func get(_ key: String, from object: Codable) -> [URL] {
-        guard let strings: [String] = object.extract(key: key) else { return [] }
-        return strings.compactMap{ URL.init(string: $0) }
+        guard let strings: [String] = object.extract(key: key) else {
+            return []
+        }
+        return strings.compactMap { URL(string: $0) }
+    }
+}
+
+struct ArrayDecoder {
+    static func get(_ key: String, from object: Codable) -> [Any] {
+        guard let strings: [Any] = object.extract(key: key) else {
+            return []
+        }
+        return strings
     }
 }

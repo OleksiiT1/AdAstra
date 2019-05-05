@@ -8,13 +8,24 @@
 
 import Foundation
 
-extension String: CellItem, TextCellItem {
-    var cellIdentifier: String {
-        return R.nib.oneLabelTableCell.identifier
-    }
-    
+extension String: TextCellItem {
     var name: String {
-        return self 
+        return self
     }
-    
+
 }
+
+
+//extension String: AccaptableToShow {}
+
+//extension Array: CellItem where Element == String {
+//    var cellIdentifier: String {
+//        return R.nib.oneLabelTableCell.identifier
+//    }
+//    
+//    var name: String {
+//        return "N/A"
+//    }
+//    
+//    
+//}

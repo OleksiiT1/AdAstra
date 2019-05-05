@@ -8,11 +8,17 @@
 
 import Foundation
 
-
-extension Launch: CellItem {
-    var cellIdentifier: String {
-        return R.nib.oneLabelTableCell.identifier
-    }
-}
+//extension Launch: CellItem {
+//    var cellIdentifier: String {
+//        return R.nib.twoLinedTableViewCell.identifier
+//    }
+//}
 
 extension Launch: TextCellItem {}
+
+extension Launch: TwoLinesItem {
+    var subtile: String {
+
+        return net
+    }
+}

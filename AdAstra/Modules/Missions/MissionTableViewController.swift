@@ -11,7 +11,7 @@ import UIKit
 class MissionTableViewController: BaseTableViewController, MissionView {
 
     var presenter: MissionPresenter!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewIsLoaded(self)

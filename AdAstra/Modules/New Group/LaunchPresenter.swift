@@ -30,13 +30,14 @@ class LaunchPresenterImplementation: DictionaryCellItemDataSource, LaunchPresent
     private var isLoading: Bool = false
     private var id: Int
     override var keys: [CellItemDecoder] {
-        return [.string("id"),
+        return [.int("id"),
          .string("name"),
          .date("net", "MMMM dd, yyyy HH:mm:ss zzz"),
-         .urls("infoURLs")
+         .urls("infoURLs"),
+         .group("vidURLs", "Videos")
         ]
     }
-    
+
     init(id: Int, interactor: LaunchInteractor, router: LaunchRouter) {
         self.id = id
         self.interactor = interactor

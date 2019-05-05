@@ -9,28 +9,35 @@
 import Foundation
 
 enum CellItemDecoder {
+    case int(String)
     case string(String)
     case date(String, String)
     case urls(String)
-
+    case group(String, String)
+    
     func getCellItem(from model: Codable) -> CellItem? {
         switch self {
+        case .int(let key):
+            return StringDecoder.get(key, from: model)
         case .string(let key):
             return StringDecoder.get(key, from: model)
         case .date(let key, let format):
             return DateDecoder.get(key, format: format, from: model)
         case .urls(let key):
-            return URLsDecoder.get(key, from: model)
+            return URLsDecoder.get(key, from: model) as? CellItem
+        case .group(let key, let defaultName):
+            return ArrayDecoder.get(key, from: model).isEmpty ? [String]() as? CellItem : defaultName
         }
     }
 }
 
 struct StringDecoder {
     static func get(_ key: String, from object: Codable) -> String? {
-        guard let string: String = object.extract(key: key) else {
-            return nil
+        let string: Any? = object.extract(key: key)
+        if let result = string as? Int {
+            return "\(result)"
         }
-        return string
+        return string as? String
     }
 }
 
@@ -60,5 +67,14 @@ struct URLsDecoder {
             return []
         }
         return strings.compactMap { URL(string: $0) }
+    }
+}
+
+struct ArrayDecoder {
+    static func get(_ key: String, from object: Codable) -> [Any] {
+        guard let strings: [Any] = object.extract(key: key) else {
+            return []
+        }
+        return strings
     }
 }

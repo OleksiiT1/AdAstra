@@ -18,3 +18,18 @@ extension String: CellItem, TextCellItem {
     }
 
 }
+
+
+extension String: AccaptableToShow {}
+
+//extension Array: CellItem where Element == String {
+//    var cellIdentifier: String {
+//        return R.nib.oneLabelTableCell.identifier
+//    }
+//    
+//    var name: String {
+//        return "N/A"
+//    }
+//    
+//    
+//}

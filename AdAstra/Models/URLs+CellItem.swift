@@ -8,7 +8,12 @@
 
 import Foundation
 
-extension Array: CellItem where Element == URL {
+protocol AccaptableToShow {}
+
+extension URL: AccaptableToShow{}
+
+
+extension Array: CellItem where Element == AccaptableToShow {
     var cellIdentifier: String {
         return R.nib.oneLabelTableCell.identifier
     }
@@ -18,4 +23,11 @@ extension Array: TextCellItem where Element == URL {
     var name: String {
         return "Items"
     }
+}
+
+extension URL: TextCellItem {
+    var name: String {
+        return self.absoluteString
+    }
+    
 }

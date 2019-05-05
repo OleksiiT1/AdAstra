@@ -13,25 +13,34 @@ class DictionaryCellItemDataSource: CellDataSource {
     var keys: [CellItemDecoder] {
         return [CellItemDecoder]()
     }
+    private var items: [CellItem] = []
 
     var count: Int {
-        return model == nil ? 0 : keys.count
+        return model == nil ? 0 : items.count
     }
 
     func at(_ index: Int) -> CellItem {
-        guard index < keys.count else {
+        guard index < items.count else {
             return "N/A"
         }
-        guard let model = model else {
-            return "N/A"
-        }
-        let key = keys[index]
-        return key.getCellItem(from: model) ?? "N/A"
+        return items[index]
     }
 
     func prefetch(_ indexes: [Int]) {}
 
     func set(model: Codable) {
         self.model = model
+        for key in keys {
+            let item = key.getCellItem(from: model) ?? "N/A"
+            if let item = item as? [Any] {
+                for subitem in item {
+                    if let cellItem = subitem as? CellItem {
+                        items.append(cellItem)
+                    }
+                }
+            } else {
+                items.append(item)
+            }
+        }
     }
 }

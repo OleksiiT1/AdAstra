@@ -12,6 +12,7 @@ struct Launch: Codable {
     var id: Int
     var name: String
     var net: String
+    var infoURLs: [String]
 //    var lsp: String
 
     var launchDate: Date? {
